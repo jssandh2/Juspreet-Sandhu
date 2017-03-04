@@ -18,4 +18,7 @@
 
 ## PAGES
 * [Academic Interests](https://jssandh2.github.io/juspreet/academic_interests.html).
-* I plan on writing [**Math Proofs**](https://jssandh2.github.io/juspreet/math_proofs.html) and some [**PL/PLT Demonstrations**](https://jssandh2.github.io/juspreet/plt.html). I'll occasionally add videos of me playing [**Classical Guitar**](https://jssandh2.github.io/juspreet/music.html) and my [**Photography**](https://jssandh2.github.io/juspreet/photography.html)
+* [**Math Proofs**](https://jssandh2.github.io/juspreet/math_proofs.html) 
+* [**PL/PLT Demonstrations**](https://jssandh2.github.io/juspreet/plt.html). 
+* [**Classical Guitar Videos**](https://jssandh2.github.io/juspreet/music.html) 
+* [**Photography**](https://jssandh2.github.io/juspreet/photography.html)
