@@ -1,7 +1,7 @@
 ## ABOUT ME
 
 *   I'm a Software Engineer in the **Search & Discovery** (S&D) Team at **Tumblr Inc.**. I work primarily on _Search Parallelization_, _Filtering_ and _Relational Modeling_.
-*   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graudated in May, 2015.
+*   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
 *   While at **UIUC**, I did the following things :
     *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
     *   Was a **Grader ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
