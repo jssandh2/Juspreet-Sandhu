@@ -17,5 +17,5 @@
         *   Some of my [Pictures](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
 
 ## PAGES
-* Here is some information on my [Academic Interests](https://jssandh2.github.io/juspreet/academic_interests.html).
+* [Academic Interests](https://jssandh2.github.io/juspreet/academic_interests.html).
 * I plan on writing [**Math Proofs**](https://jssandh2.github.io/juspreet/math_proofs.html) and some [**PL/PLT**](https://jssandh2.github.io/juspreet/plt.html) explanations using Code here. I'll occasionally add videos of me playing [**Classical Guitar**](https://jssandh2.github.io/juspreet/music.html) and my [**Photography**](https://jssandh2.github.io/juspreet/photography.html)
