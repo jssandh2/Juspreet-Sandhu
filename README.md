@@ -17,8 +17,8 @@
         *   Some of my [Pictures](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
 
 ## PAGES
-* [Academic Interests](https://jssandh2.github.io/juspreet/academic_interests.html).
-* [**Math Proofs**](https://jssandh2.github.io/juspreet/math_proofs.html) 
-* [**PL/PLT Demonstrations**](https://jssandh2.github.io/juspreet/plt.html). 
-* [**Classical Guitar Videos**](https://jssandh2.github.io/juspreet/music.html) 
-* [**Photography**](https://jssandh2.github.io/juspreet/photography.html)
+* [Academic Interests](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html).
+* [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html) 
+* [**PL/PLT Demonstrations**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html). 
+* [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html) 
+* [**Photography**](https://jssandh2.github.io/Juspreet-Sandhu/photography.html)
