@@ -15,3 +15,7 @@
     *   **Badminton** : I started playing Badminton competitively around 2007\. I played Zonals and State-Level Badminton in India, and was part of the A-Team at UIUC. Unfortunately, I haven't been playing/training since 2015.
     *   **Photography** : I am particularly fond of Nature Photography, Black-and-White Photography and DSLRs with High-Shutter Speeds.
         *   Some of my [Pictures](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
+
+## PAGES
+* Here is some information on my [Academic Interests](https://jssandh2.github.io/juspreet/academic_interests.html).
+* I plan on writing [**Math Proofs**](https://jssandh2.github.io/juspreet/math_proofs.html) and some [**PL/PLT**](https://jssandh2.github.io/juspreet/plt.html) explanations using Code here. I'll occasionally add videos of me playing [**Classical Guitar**](https://jssandh2.github.io/juspreet/music.html) and my [**Photography**](https://jssandh2.github.io/juspreet/photography.html)
