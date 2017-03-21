@@ -13,8 +13,8 @@
     *   **Photography** : I am particularly fond of Nature Photography, Black-and-White Photography and DSLRs with High-Shutter Speeds.
 
 ## PAGES
-* [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html).
+* [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
 * [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
-* [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html).
+* [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
 * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
 * [**Photography**](https://jssansdh2.github.io/Juspreet-Sandhu/photography.html)
