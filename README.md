@@ -18,5 +18,6 @@
 * [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
 * [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
 * [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
+* [**Code**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
 * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
 * [**Photography**](https://jssansdh2.github.io/Juspreet-Sandhu/photography.html)
