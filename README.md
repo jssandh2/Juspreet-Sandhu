@@ -5,6 +5,7 @@
     * [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
     * [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
     * [**Code**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
+
 ### MUSIC & PHOTOGRAPHY
 * Pages pertaining to my Musical Interests/Performances and my Photography :
     * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
