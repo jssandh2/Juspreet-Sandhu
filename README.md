@@ -1,3 +1,16 @@
+## PAGES
+### ACADEMIC
+* Pages pertaining to Academic Interests, Math/TCS/PLT Posts and Code :
+    * [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
+    * [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
+    * [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
+    * [**Code**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
+
+### MUSIC & PHOTOGRAPHY
+* Pages pertaining to my Musical Interests/Performances and my Photography :
+    * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
+    * [**Photography**](https://jssansdh2.github.io/Juspreet-Sandhu/photography.html)
+
 ## ABOUT ME
 *   I'm a Software Engineer in the **Search & Discovery** (S&D) Team at **Tumblr Inc.**. I work primarily on _Search Parallelization_, _Filtering_ and _Relational Modeling_.
 *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
@@ -13,10 +26,3 @@
 * I maintain the following pages :
     * A **_Github_** repo for my code : [GitHub](https://github.com/jssandh2)
     * A **_Quora_** page where I answer questions on Mathematics and Theoretical Computer Science : [Quora](https://www.quora.com/profile/Juspreet-Sandhu)
-
-## PAGES
-* [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
-* [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
-* [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
-* [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
-* [**Photography**](https://jssansdh2.github.io/Juspreet-Sandhu/photography.html)
