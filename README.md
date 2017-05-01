@@ -5,11 +5,12 @@
     * [**Math Proofs**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
     * [**PLT Posts**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
     * [**Code**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
+    * [**Resume/CV**](https://juspreetsandhu.files.wordpress.com/2015/05/juspreet_s_sandhu_resume_final_2017.pdf)
 
 ### MUSIC & PHOTOGRAPHY
 * Pages pertaining to my Musical Interests/Performances and my Photography :
     * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
-    * [**Photography**](https://jssansdh2.github.io/Juspreet-Sandhu/photography.html)
+    * [**Photography**](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
 
 ## ABOUT ME
 *   I'm a Software Engineer in the **Search & Discovery** (S&D) Team at **Tumblr Inc.**. I work primarily on _Search Parallelization_, _Filtering_ and _Relational Modeling_.
