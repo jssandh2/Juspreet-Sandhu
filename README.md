@@ -14,7 +14,7 @@
 
 ## ABOUT ME
 *   I'm a Software Engineer in the **Search & Discovery** (S&D) Team at **Tumblr Inc.**. I work primarily on _Search Parallelization_, _Filtering_ and _Relational Modeling_.
-*   Beginning **April, 2017** I also started working with [*James Wilcox*](http://homes.cs.washington.edu/~jrw12/) to extend the [*Verdi*](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
+*   Beginning **April, 2017** I also started working with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
 *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
 *   While at **UIUC**, I did the following things :
     *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
