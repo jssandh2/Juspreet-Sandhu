@@ -1,14 +1,14 @@
 ## PAGES
 ### ACADEMIC
-* Pages pertaining to Academic Interests, CV/Resume and links to Repositories on GitHub :
+* Pages pertaining to Academic Interests and my CV/Resume :
     * [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
     * [**Resume**](https://juspreetsandhu.files.wordpress.com/2015/05/juspreet_s_sandhu_resume_final_2017.pdf)
-    * [**Repositories**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
  
 ### BLOGS
-* Here are links to my blog on _Mathematics_ and _Programming Language Theory_ :
+* Here are links to my blogs on _Mathematics_, _Programming Language Theory_ and some _Repositories_ I've written :
     * [**Mathematics Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
     * [**Programming Language Theory Blog**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
+    * [**Repositories**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
 
 ### MUSIC & PHOTOGRAPHY
 * Pages pertaining to my Musical Interests/Performances and my Photography :
