@@ -1,11 +1,14 @@
 ## PAGES
 ### ACADEMIC
-* Pages pertaining to Academic Interests, Math/TCS/PLT Posts and Code :
+* Pages pertaining to Academic Interests and my CV/Resume :
     * [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
-    * [**Math Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
-    * [**Programming Languages Blog**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
-    * [**Code**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
-    * [**Resume/CV**](https://juspreetsandhu.files.wordpress.com/2015/05/juspreet_s_sandhu_resume_final_2017.pdf)
+    * [**Resume**](https://juspreetsandhu.files.wordpress.com/2015/05/juspreet_s_sandhu_resume_final_2017.pdf)
+ 
+### BLOGS
+* Here are links to my blogs on _Mathematics_, _Programming Language Theory_ and some _Repositories_ I've written :
+    * [**Mathematics Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
+    * [**Programming Language Theory Blog**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
+    * [**Repositories**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
 
 ### MUSIC & PHOTOGRAPHY
 * Pages pertaining to my Musical Interests/Performances and my Photography :
@@ -28,7 +31,3 @@
         *   **Classical Music** : I've been studying Classical Guitar since 2006\. I play a [Cordoba-C9](http://www.cordobaguitars.com/p/c9) for now (Cedar Top). I'm looking into getting an [Alhambra-8P](http://www.alhambrausa.com/guitars/classical/9/8-p.html) or [Alhambra-9P](http://www.alhambrausa.com/guitars/classical/10/9-p.html).
         *   **Badminton** : I started playing Badminton competitively around 2007. I played Zonals and State-Level Badminton in India, and was part of the A-Team at UIUC. Unfortunately, I haven't been playing/training since 2015.
         *   **Photography** : I am particularly fond of Nature Photography, Black-and-White Photography and DSLRs with High-Shutter Speeds.
-* **GITHUB/QUORA**
-    * I maintain the following pages :
-        * A **_Github_** repo for my code : [GitHub](https://github.com/jssandh2)
-        * A **_Quora_** page where I answer questions on Mathematics and Theoretical Computer Science : [Quora](https://www.quora.com/profile/Juspreet-Sandhu)
