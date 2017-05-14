@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-   
+
       <title>Post 2</title>
       <link rel="stylesheet" type="text/css" href="/static/css/processed.css"/>
       <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
@@ -18,30 +18,32 @@
             </div>
             <hr/>
          </div>
-         <p>This will be the Second Post in the PLT section.It will introduce the Dependently-Typed Lambda Calculus[<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>] (or atleast, a version of it) : The Motivation behind it; Its Semantics and Properties. 
+         <p>This will be the Second Post in the PLT section. It will introduce the Dependently-Typed Lambda Calculus[<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>] (or atleast, a version of it) : The Motivation behind it; Its Semantics and Properties.
          </p>
-         <p>I expect the reader to be familiar with the basics of Lambda Calculus, Type Theory, and the System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>, which is the Second-Order Typed Lambda Calculus. 
+         <p>I expect the reader to be familiar with the basics of Lambda Calculus, Type Theory, and the System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>, which is the Second-Order Typed Lambda Calculus.
          </p>
-         <p>Once again, I will use <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> to refer to singular <span class="emphasis"><em>and</em></span> chained <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-reductions. 
+         <p>Once again, I will use <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> to refer to singular <span class="emphasis"><em>and</em></span> chained <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-reductions.
          </p>
          <p><span class="bold"><strong>MOTIVATION</strong></span> : Let&#8217;s start by motivating the need for (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>) and seeing why (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>) isn&#8217;t enough for sophisticated types. In order to see this, let&#8217;s briefly remind ourselves of the generating Grammars for
-            the set of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2-types and (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>) : 
+            the set of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2-types and (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>) :
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2 = <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120141;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2 <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8594;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8719;</mo><mi>&#120141;</mi></mrow></math></span>:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>.<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2 = <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120141;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2 <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8594;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8719;</mo><mi>&#120141;</mi></mrow></math></span>:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>.<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2
          </p>
-         <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> = V <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>V:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2. <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#120141;</mi></mrow></math></span>:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>.<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub><mi>&#120139;</mi><mn>2</mn></mrow></math></span> 
+         <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> = V <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>V:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120139;</mi></math></span>2. <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#120141;</mi></mrow></math></span>:<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>.<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#923;</mi> <mrow><mi>&#120139;</mi><mn>2</mn></mrow> </msub><mi>&#120139;</mi><mn>2</mn></mrow></math></span>
          </p>
          <p>The <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>, as we can see, is great at dealing with <span class="bold"><strong>Terms-Dependent-on-Types</strong></span>, by introducing the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8719;</mo></math></span>-type. This allows a term to "bind" to many different types. However, the bindings are relatively straightforward, and therefore,
-            so are the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8719;</mo></math></span>-types. 
+            so are the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8719;</mo></math></span>-types.
          </p>
          <p>An example is the definition of the &#8217;Nat&#8217;-type : </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#8469;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8801;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8719;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mo>&#8594;</mo><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#8469;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8801;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8719;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mo>&#8594;</mo><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span>
          </p>
-         <p>All elements of &#8216;Nat&#8216; will have this type, and can be constructed generally as : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>f : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>x : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>f</mi><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>)</mo></mrow></math></span> It is easy to see that - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>f</mi><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>)</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> 
+         <p>All elements of &#8216;Nat&#8216; will have this type, and can be constructed generally as : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>f : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#955;</mi></math></span>x : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>f</mi><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>)</mo></mrow></math></span>
+         </p>
+         <p>It is easy to see that - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>f</mi><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>)</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span>
          </p>
          <p>So, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span> gives us the ability to concisely write functions with terms for generic types. For instance, one could construct a generic
             identity function, and then simply substitute in the type and term (in that order), to make it act as an identity function
-            for that <span class="emphasis"><em>specific</em></span> Type. However, it doesn&#8217;t allow us to construct <span class="bold"><strong>Types-Dependent-on-Types</strong></span>. The reason for this is in the <span class="emphasis"><em>2nd-order application/abstraction rules</em></span> in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span> : 
+            for that <span class="emphasis"><em>specific</em></span> Type. However, it doesn&#8217;t allow us to construct <span class="bold"><strong>Types-Dependent-on-Types</strong></span>. The reason for this is in the <span class="emphasis"><em>2nd-order application/abstraction rules</em></span> in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span> :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -49,26 +51,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mo>:</mo><mo>&#8719;</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi><mo>:</mo><mo>*</mo></mrow></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mo>:</mo><mo>&#8719;</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi><mo>:</mo><mo>*</mo></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>[</mo><mi>&#945;</mi><mo>:</mo><mo>=</mo><mi>B</mi><mo>]</mo></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>[</mo><mi>&#945;</mi><mo>:</mo><mo>=</mo><mi>B</mi><mo>]</mo></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -77,104 +79,104 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo><mo>&#8866;</mo><mi>M</mi><mo>:</mo><mi>A</mi></mrow></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo><mo>&#8866;</mo><mi>M</mi><mo>:</mo><mi>A</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>:</mo><mo>&#8719;</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>:</mo><mo>&#8719;</mo><mi>&#945;</mi><mo>:</mo><mo>*</mo></mrow></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> As on can see, the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi><mo>:</mo><mo>*</mo></mrow></math></span> proposition from <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><msub><mi>l</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> does not allow us to "bind" more complicated types than <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>. In addition, the cycle for this simplicity is completed because <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> only allows us to introduce and make polymorphic some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> with <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>. 
+         <p> As on can see, the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi><mo>:</mo><mo>*</mo></mrow></math></span> proposition from <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><msub><mi>l</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> does not allow us to "bind" more complicated types than <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>. In addition, the cycle for this simplicity is completed because <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math></span> only allows us to introduce and make polymorphic some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> with <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>.
          </p>
-         <p>This limits the expressiveness of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>. Here, we can have variables <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow></math></span> that are dependent on some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>,</mo><mi>&#946;</mi><mo>,</mo><mo>.</mo><mo>.</mo></mrow></math></span>, but we can&#8217;t have some <span class="emphasis"><em>arbitrary type</em></span> be dependent on another <span class="emphasis"><em>type</em></span>. 
+         <p>This limits the expressiveness of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>. Here, we can have variables <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow></math></span> that are dependent on some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>,</mo><mi>&#946;</mi><mo>,</mo><mo>.</mo><mo>.</mo></mrow></math></span>, but we can&#8217;t have some <span class="emphasis"><em>arbitrary type</em></span> be dependent on another <span class="emphasis"><em>type</em></span>.
          </p>
          <p>Specifically, expressions of the sort : </p>
-         <p>i) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> 
+         <p>i) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span>
          </p>
-         <p>ii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span> 
+         <p>ii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span>
          </p>
-         <p>are not possible in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>. 
+         <p>are not possible in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>.
          </p>
-         <p>Ideally, we would like these expressions to become placeholders for more <span class="emphasis"><em>generic</em></span> types via <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-recution : 
+         <p>Ideally, we would like these expressions to become placeholders for more <span class="emphasis"><em>generic</em></span> types via <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-reduction :
          </p>
-         <p>i) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#947;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#947;</mi><mo>&#8594;</mo><mi>&#947;</mi></mrow></math></span> 
+         <p>i) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#947;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#947;</mi><mo>&#8594;</mo><mi>&#947;</mi></mrow></math></span>
          </p>
-         <p>ii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#948;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#948;</mi><mo>&#8594;</mo><mi>&#948;</mi></mrow></math></span> 
+         <p>ii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#948;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#948;</mi><mo>&#8594;</mo><mi>&#948;</mi></mrow></math></span>
          </p>
-         <p>iii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo></mrow><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>&#8594;</mo><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span> 
+         <p>iii) <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo></mrow><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>&#8594;</mo><mrow><mo>(</mo><msub><mi>&#964;</mi> <mn>1</mn> </msub><mo>&#8594;</mo><msub><mi>&#964;</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span>
          </p>
-         <p>We can see that these allow us to <span class="emphasis"><em>substitute</em></span> <span class="emphasis"><em>types</em></span> into <span class="emphasis"><em>types</em></span>. This is a very useful abstraction upon which many modern functional programming constructs rely. <span class="bold"><strong>Monads</strong></span>, for example, often rely on implicitly <span class="emphasis"><em>Dependent-Types</em></span>. 
+         <p>We can see that these allow us to <span class="emphasis"><em>substitute</em></span> <span class="emphasis"><em>types</em></span> into <span class="emphasis"><em>types</em></span>. This is a very useful abstraction upon which many modern functional programming constructs rely. <span class="bold"><strong>Monads</strong></span>, for example, often rely on implicitly <span class="emphasis"><em>Dependent-Types</em></span>.
          </p>
-         <p>However, none of this machinery is possible in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>, and we shall need new <span class="bold"><strong>Semantics</strong></span> to introduce them : Enter <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>. 
+         <p>However, none of this machinery is possible in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>, and we shall need new <span class="bold"><strong>Semantics</strong></span> to introduce them : Enter <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>.
          </p>
          <p><span class="bold"><strong>SEMANTICS</strong></span> : Now that we know what shortcomings we had before, and what new expressive abilities we would like in our system (vaguely),
-            let us begin to discuss the enhancements via new <span class="emphasis"><em>semantics</em></span>. 
+            let us begin to discuss the enhancements via new <span class="emphasis"><em>semantics</em></span>.
          </p>
          <p>First and foremost, let us analyze one of the previously mentioned lambda-terms that we would like in our new framework :
-            
+
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span>
          </p>
-         <p>We would like this term can be a placeholder for <span class="emphasis"><em>any</em></span> Type that is a binary operation of the arrow on itself. Therefore, we would like to type the term as : 
+         <p>We would like this term can be a placeholder for <span class="emphasis"><em>any</em></span> Type that is a binary operation of the arrow on itself. Therefore, we would like to type the term as :
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8594;</mo><mo>*</mo></mrow></math></span> In order to be able to generically type these "higher-order" Types, we need a new <span class="emphasis"><em>Super-Type</em></span> to represent <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> and all <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> expressions over the binary operator <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8594;</mo></math></span>. Terms from the said set are generally typed as : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8594;</mo><mo>*</mo></mrow></math></span> In order to be able to generically type these "higher-order" Types, we need a new <span class="emphasis"><em>Super-Type</em></span> to represent <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> and all <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> expressions over the binary operator <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8594;</mo></math></span>. Terms from the said set are generally typed as : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>
          </p>
-         <p>So, <span class="emphasis"><em>all</em></span> types like : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>*</mo><mo>&#8594;</mo><mo>*</mo><mo>,</mo><mo>(</mo><mo>*</mo><mo>&#8594;</mo><mo>*</mo><mo>)</mo><mo>&#8594;</mo><mo>*</mo><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow></math></span> have type : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> 
+         <p>So, <span class="emphasis"><em>all</em></span> types like : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>*</mo><mo>&#8594;</mo><mo>*</mo><mo>,</mo><mo>(</mo><mo>*</mo><mo>&#8594;</mo><mo>*</mo><mo>)</mo><mo>&#8594;</mo><mo>*</mo><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></mrow></math></span> have type : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>
          </p>
          <p>Furthermore, to formalize this notion of abstract structure over these "higher-types", we introduce some simple terminology
-            and grammar : 
+            and grammar :
          </p>
-         <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120130;</mi></math></span> = <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#120130;</mi><mo>&#8594;</mo><mi>&#120130;</mi></mrow></math></span> 
+         <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120130;</mi></math></span> = <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>|</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#120130;</mi><mo>&#8594;</mo><mi>&#120130;</mi></mrow></math></span>
          </p>
-         <p>It is easy to see (by definition, in fact), that, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>&#954;</mi><mo>&#8712;</mo><mi>&#120130;</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>:</mo><mo>&#9633;</mo></mrow></math></span>. 
+         <p>It is easy to see (by definition, in fact), that, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>&#954;</mi><mo>&#8712;</mo><mi>&#120130;</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>:</mo><mo>&#9633;</mo></mrow></math></span>.
          </p>
-         <p>These abstract "higher-types" are termed <span class="bold"><strong>Kinds</strong></span>. They represent the Set of the new, more powerful Types that we want to type terms with and substitute into (in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>). 
+         <p>These abstract "higher-types" are termed <span class="bold"><strong>Kinds</strong></span>. They represent the Set of the new, more powerful Types that we want to type terms with and substitute into (in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>).
          </p>
-         <p>The types : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>&#9633;</mo></mrow></math></span> have a special name - <span class="emphasis"><em>sorts</em></span>. They are represented as : <span class="emphasis"><em>sorts</em></span> = {<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>&#9633;</mo></mrow></math></span>}. The symbol <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> refers to <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> or <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>. 
+         <p>The types : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>&#9633;</mo></mrow></math></span> have a special name - <span class="emphasis"><em>sorts</em></span>. They are represented as : <span class="emphasis"><em>sorts</em></span> = {<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mo>&#9633;</mo></mrow></math></span>}. The symbol <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> refers to <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> or <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>.
          </p>
-         <p>Terms such as the ones defined above, that take Types and <span class="emphasis"><em>construct</em></span> new terms (of Types) from them, are called <span class="bold"><strong>Type-Constructors</strong></span>. 
+         <p>Terms such as the ones defined above, that take Types and <span class="emphasis"><em>construct</em></span> new terms (of Types) from them, are called <span class="bold"><strong>Type-Constructors</strong></span>.
          </p>
          <p>Formally : </p>
-         <p>A <span class="bold"><strong>Type-Constructor</strong></span> is a term <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>:</mo><mi>&#954;</mi></mrow></math></span>. 
+         <p>A <span class="bold"><strong>Type-Constructor</strong></span> is a term <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>:</mo><mi>&#954;</mi></mrow></math></span>.
          </p>
-         <p>If <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>&#8800;</mo><mo>*</mo></mrow></math></span>, then the it is referred to as a <span class="bold"><strong>Proper Type-Constructor</strong></span>. 
+         <p>If <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>&#8800;</mo><mo>*</mo></mrow></math></span>, then it is referred to as a <span class="bold"><strong>Proper Type-Constructor</strong></span>.
          </p>
-         <p>Now that we have an <span class="emphasis"><em>idea</em></span> of what we want our Lambda-Terms in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> to look like, and what exactly our "Higher-Types" <span class="emphasis"><em>must</em></span> look like, we can begin to introduce the Rules and Formal Semantics of our system. 
+         <p>Now that we have an <span class="emphasis"><em>idea</em></span> of what we want our Lambda-Terms in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> to look like, and what exactly our "Higher-Types" <span class="emphasis"><em>must</em></span> look like, we can begin to introduce the Rules and Formal Semantics of our system.
          </p>
-         <p>The first thing we need to do is introduce the "Super-Type" <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> in our Derivation rules so as to construct complex types. This is done via the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> rule : 
+         <p>The first thing we need to do is introduce the "Super-Type" <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> in our Derivation rules so as to construct complex types. This is done via the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> rule :
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#981;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mo>*</mo><mo>:</mo><mo>&#9633;</mo></mrow></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#981;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mo>*</mo><mo>:</mo><mo>&#9633;</mo></mrow></math></span>
          </p>
          <p>This rule is necessary for 2 reasons : </p>
-         <p>a) It allows us to introduce <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> and generically typed type-variables 
+         <p>a) It allows us to introduce <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> and generically typed type-variables
          </p>
-         <p>b) It lays the foundations for the usage of the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>)</mo></mrow></math></span> rule (introduced ahead) on <span class="emphasis"><em>empty contexts</em></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8801;</mo><mi>&#981;</mi></mrow></math></span>) 
+         <p>b) It lays the foundations for the usage of the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>)</mo></mrow></math></span> rule (introduced ahead) on <span class="emphasis"><em>empty contexts</em></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8801;</mo><mi>&#981;</mi></mrow></math></span>)
          </p>
-         <p>Now that we can introduce the super-type (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>) into our Lambda-Calculus, the next thing we want is the ability to introduce variables at 2 levels : 
+         <p>Now that we can introduce the super-type (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>) into our Lambda-Calculus, the next thing we want is the ability to introduce variables at 2 levels :
          </p>
-         <p>a) Those with type <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> 
+         <p>a) Those with type <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>
          </p>
          <p>b) And variables that have a type of a type-variable </p>
-         <p>This is achieved via the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> rule : 
+         <p>This is achieved via the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> rule :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -182,33 +184,33 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> As <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> represents a term from the set : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mo>*</mo><mo>,</mo><mo>&#9633;</mo><mo>}</mo></mrow></math></span> we can see that 2 levels of terms can be introduced here. As an example, consider the following : 
+         <p> As <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> represents a term from the set : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mo>*</mo><mo>,</mo><mo>&#9633;</mo><mo>}</mo></mrow></math></span> we can see that 2 levels of terms can be introduced here. As an example, consider the following :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -216,26 +218,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> ((<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mi>a</mi><mi>r</mi></mrow></math></span>) on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> ((<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mi>a</mi><mi>r</mi></mrow></math></span>) on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -244,39 +246,39 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> )<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> )<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> However, with <span class="emphasis"><em>just</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> we can&#8217;t generate <span class="emphasis"><em>all</em></span> things that are present in the context (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>). As an example, the following generations are not possible : 
+         <p> However, with <span class="emphasis"><em>just</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> we can&#8217;t generate <span class="emphasis"><em>all</em></span> things that are present in the context (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>). As an example, the following generations are not possible :
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>
          </p>
-         <p>We need to solve this issue by effectively allowing for the <span class="emphasis"><em>weakening</em></span> of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span> by allowing us to "re-derive" <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> no matter what <span class="emphasis"><em>exactly</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span> is. The rule that introduces this into the semantics of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> is <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span> : 
+         <p>We need to solve this issue by effectively allowing for the <span class="emphasis"><em>weakening</em></span> of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span> by allowing us to "re-derive" <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> no matter what <span class="emphasis"><em>exactly</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span> is. The rule that introduces this into the semantics of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> is <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span> :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -284,26 +286,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>  if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>  if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -311,7 +313,7 @@
             </ol>
          </div>
          <p> Again, it&#8217;s easy to see that the Rule allows for "weakening" at the level of terms of types, and types of higher-kinds. This
-            can be seen pretty easily in the following example : 
+            can be seen pretty easily in the following example :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -319,26 +321,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo><mo>&#215;</mo><mn>2</mn></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo><mo>&#215;</mo><mn>2</mn></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -347,26 +349,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#981;</mi><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>s</mi><mi>o</mi><mi>r</mi><mi>t</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -375,26 +377,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>v</mi><mi>a</mi><mi>r</mi><mo>)</mo></mrow></math></span> on <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -403,33 +405,33 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>2</mn><mo>.</mo><mo>)</mo></mrow></math></span>) 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mo>*</mo></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#9633;</mo></math></span> (From <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>1</mn><mo>.</mo><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mn>2</mn><mo>.</mo><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span>) 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>,</mo><mi>&#946;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>*</mo><mo>&#8866;</mo><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>w</mi><mi>e</mi><mi>a</mi><mi>k</mi><mo>)</mo></mrow></math></span>)
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> So, we&#8217;ve gained the ability to fully express our Context (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>) and introduce the super-type into our derivations. The only semantic we need before introducing <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><mi>l</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><mi>t</mi><mo>)</mo></mrow></math></span> into our rules is that of the ability to construct <span class="emphasis"><em>any</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>&#8712;</mo><mi>&#120130;</mi></mrow></math></span>. This can be introduced by the simple <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>)</mo></mrow></math></span> rule : 
+         <p> So, we&#8217;ve gained the ability to fully express our Context (<span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>) and introduce the super-type into our derivations. The only semantic we need before introducing <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><mi>l</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><mi>t</mi><mo>)</mo></mrow></math></span> into our rules is that of the ability to construct <span class="emphasis"><em>any</em></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#954;</mi><mo>&#8712;</mo><mi>&#120130;</mi></mrow></math></span>. This can be introduced by the simple <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>f</mi><mi>o</mi><mi>r</mi><mi>m</mi><mo>)</mo></mrow></math></span> rule :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -437,35 +439,35 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> Once again, it is easy to see that this not only introduces the elements of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120130;</mi></math></span>, but also allows us to type term-variables with type-variables. 
+         <p> Once again, it is easy to see that this not only introduces the elements of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#120130;</mi></math></span>, but also allows us to type term-variables with type-variables.
          </p>
-         <p>We are now in a place to introduce the much awaited <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><mi>l</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><mi>t</mi><mo>)</mo></mrow></math></span> rules for <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> : 
+         <p>We are now in a place to introduce the much awaited <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>p</mi><mi>p</mi><mi>l</mi><mo>)</mo></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mi>s</mi><mi>t</mi><mo>)</mo></mrow></math></span> rules for <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -473,26 +475,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -501,26 +503,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -528,9 +530,9 @@
             </ol>
          </div>
          <p> These rules are actually fairly intuitive, and once again, easy to verify as to being applicable for introducing and applying
-            to term-variables <span class="emphasis"><em>and</em></span> type-variables. 
+            to term-variables <span class="emphasis"><em>and</em></span> type-variables.
          </p>
-         <p>The last rule that we need to construct our Dependently-Typed <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> is the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule : 
+         <p>The last rule that we need to construct our Dependently-Typed <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> is the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -538,44 +540,44 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><msub><mo>=</mo> <mi>&#946;</mi> </msub><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><msub><mo>=</mo> <mi>&#946;</mi> </msub><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> The reason we need the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule is to formalize our intuition for circumstances where a variable can be typed with 2 <span class="emphasis"><em><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalent</em></span> types. Consider the following type-term : 
+         <p> The reason we need the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule is to formalize our intuition for circumstances where a variable can be typed with 2 <span class="emphasis"><em><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalent</em></span> types. Consider the following type-term :
          </p>
-         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#946;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#946;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span> 
+         <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#946;</mi></mrow></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#946;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span>
          </p>
-         <p>Supposing we have some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>, where, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#946;</mi></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8712;</mo><mi>&#915;</mi></mrow></math></span> 
+         <p>Supposing we have some <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>, where, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#955;</mi><mi>&#945;</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>*</mo></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#945;</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#945;</mi><mo>&#8594;</mo><mi>&#945;</mi><mo>)</mo><mi>&#946;</mi></mrow></math></span> and <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8712;</mo><mi>&#915;</mi></mrow></math></span>
          </p>
-         <p>Clearly, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#946;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span> as a type is equivalent to the one that <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> is typed with in the context <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>. This is the exact intuition that the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule formalizes. The <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule allows this for <span class="emphasis"><em>all</em></span> types up to <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalence. 
+         <p>Clearly, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#946;</mi><mo>&#8594;</mo><mi>&#946;</mi></mrow></math></span> as a type is equivalent to the one that <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></span> is typed with in the context <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#915;</mi></math></span>. This is the exact intuition that the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule formalizes. The <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule allows this for <span class="emphasis"><em>all</em></span> types up to <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalence.
          </p>
          <p>One should be careful so as to not confuse the <span class="bold"><strong>Subject-Reduction Lemma</strong></span> with the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule. The former states that two <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalent terms have the same type, while the latter states that a term can be typed with all <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-equivalent types. If there is some confusion regarding the fact that <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-reduction is applying over here to terms <span class="emphasis"><em>and</em></span> types, then one can simply glance at the rules for <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> to understand that, as types are more complicated in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> and can be applied to and abstracted on to create more types, type-variables can be manipulated in ways that they can&#8217;t in
-            <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>. Hence, the concept of <span class="emphasis"><em>Dependent-Types</em></span>. 
+            <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#955;</mi><mn>2</mn></mrow></math></span>. Hence, the concept of <span class="emphasis"><em>Dependent-Types</em></span>.
          </p>
-         <p>Having derived all the Formal Semantics of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> we can now rewrite them collectively, and move on to the important <span class="bold"><strong>Properties</strong></span> : 
+         <p>Having derived all the Formal Semantics of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> we can now rewrite them collectively, and move on to the important <span class="bold"><strong>Properties</strong></span> :
          </p>
          <div class="orderedlist">
             <ol class="orderedlist" type="1">
@@ -583,15 +585,15 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#981;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mo>*</mo><mo>:</mo><mo>&#9633;</mo></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#981;</mi></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8866;</mo><mo>*</mo><mo>:</mo><mo>&#9633;</mo></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -600,26 +602,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -628,26 +630,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>C</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#8713;</mo><mi>&#915;</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -656,26 +658,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -684,26 +686,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>M</mi><mi>N</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -712,26 +714,26 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>,</mo><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8866;</mo><mi>M</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>&#955;</mi><mi>x</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math></span> . <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#8594;</mo><mi>B</mi></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
@@ -740,57 +742,57 @@
                   <div class="informaltable">
                      <table>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td>
-                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span> 
+                              <p> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                         <tr>
-                               
-                                
-                                
+
+
+
                            <td style="border-top-style:solid; border-top-color:black; border-top-width:1px">
-                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><msub><mo>=</mo> <mi>&#946;</mi> </msub><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span> 
+                              <p><span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></math></span>, if <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><msub><mo>=</mo> <mi>&#946;</mi> </msub><msup><mi>B</mi> <msup><mrow/> <mo>'</mo> </msup> </msup></mrow></math></span>
                               </p>
                            </td>
-                               
-                             
+
+
                         </tr>
                      </table>
                   </div>
                </li>
             </ol>
          </div>
-         <p> This is it. <span class="emphasis"><em>This</em></span> is the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>. 
+         <p> This is it. <span class="emphasis"><em>This</em></span> is the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>.
          </p>
-         <p>As a last note - The <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> does <span class="emphasis"><em>not</em></span> contain <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8719;</mo></math></span>-types. However, Girard&#8217;s extension of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> into what is called "System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>F</mi> <mi>&#969;</mi> </msub></math></span>" does. 
+         <p>As a last note - The <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> does <span class="emphasis"><em>not</em></span> contain <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8719;</mo></math></span>-types. However, Girard&#8217;s extension of <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> into what is called "System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>F</mi> <mi>&#969;</mi> </msub></math></span>" does.
          </p>
-         <p><span class="bold"><strong>PROPERTIES</strong></span> : This section is going to be succinct and will mention the 3 most important properties about <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> : 
+         <p><span class="bold"><strong>PROPERTIES</strong></span> : This section is going to be succinct and I will mention the 3 most important properties about <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> : 
          </p>
-         <p><span class="emphasis"><em>Theorem 1</em></span> : <span class="bold"><strong>Uniqueness of Types</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>A</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, if, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>1</mn> </msub><mrow><mo>)</mo><mo>&#8743;</mo><mo>(</mo></mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>2</mn> </msub><mrow><mo>)</mo></mrow></mrow></math></span>, then, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>1</mn> </msub><msub><mo>=</mo> <mi>&#946;</mi> </msub><msub><mi>B</mi> <mn>2</mn> </msub></mrow></math></span>. 
+         <p><span class="emphasis"><em>Theorem 1</em></span> : <span class="bold"><strong>Uniqueness of Types</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>A</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, if, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>1</mn> </msub><mrow><mo>)</mo><mo>&#8743;</mo><mo>(</mo></mrow><mi>&#915;</mi><mo>&#8866;</mo><mi>A</mi></mrow></math></span> : <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>2</mn> </msub><mrow><mo>)</mo></mrow></mrow></math></span>, then, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>B</mi> <mn>1</mn> </msub><msub><mo>=</mo> <mi>&#946;</mi> </msub><msub><mi>B</mi> <mn>2</mn> </msub></mrow></math></span>.
          </p>
          <p>This Lemma is basically stating a formalism of the fact that a term can only be typed by two types if they are equivalent.
-            The proof for this follows from Induction on the ways a term <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span> can be built, and using the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule for the Inductive Hypothesis. 
+            The proof for this follows from Induction on the ways a term <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span> can be built, and using the <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>(</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>v</mi><mo>)</mo></mrow></math></span> rule for the Inductive Hypothesis.
          </p>
-         <p><span class="emphasis"><em>Theorem 2</em></span> : <span class="bold"><strong>Church-Rosser Theorem</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>M</mi><mo>,</mo><msub><mi>N</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>N</mi> <mn>2</mn> </msub><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>N</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>&#8743;</mo><mrow><mo>(</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>N</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8707;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>N</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><mi>N</mi></mrow></math></span>. 
+         <p><span class="emphasis"><em>Theorem 2</em></span> : <span class="bold"><strong>Church-Rosser Theorem</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>M</mi><mo>,</mo><msub><mi>N</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>N</mi> <mn>2</mn> </msub><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>N</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>&#8743;</mo><mrow><mo>(</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>N</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8707;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>N</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8715;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><mi>N</mi></mrow></math></span>.
          </p>
-         <p>For a <span class="emphasis"><em>generic</em></span> Proof of this Theorem, one may refer to the work by <span class="bold"><strong>Henk Barendregt</strong></span> or that of <span class="bold"><strong>Takahashi, 1995</strong></span>. The important part is that the theorem holds for the System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>. 
+         <p>For a <span class="emphasis"><em>generic</em></span> Proof of this Theorem, one may refer to the work by <span class="bold"><strong>Henk Barendregt</strong></span> or that of <span class="bold"><strong>Takahashi, 1995</strong></span>. The important part is that the theorem holds for the System <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span>.
          </p>
-         <p><span class="emphasis"><em>Theorem 3</em></span> : <span class="bold"><strong>Strong Normalization Theorem</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8707;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#960;</mi><mo>=</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mn>1</mn> </msub><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mn>2</mn> </msub><mo>.</mo><mo>.</mo><mo>.</mo><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mi>n</mi> </msub></mrow></math></span>, where, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>M</mi> <mi>n</mi> </msub></math></span> is in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-nf. 
+         <p><span class="emphasis"><em>Theorem 3</em></span> : <span class="bold"><strong>Strong Normalization Theorem</strong></span> - <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#8704;</mo><mi>M</mi><mo>&#8712;</mo><msub><mi>&#923;</mi> <mi>&#969;</mi> </msub></mrow></math></span>, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#8707;</mo></math></span> <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#960;</mi><mo>=</mo><mi>M</mi><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mn>1</mn> </msub><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mn>2</mn> </msub><mo>.</mo><mo>.</mo><mo>.</mo><msub><mo>&#8594;</mo> <mi>&#946;</mi> </msub><msub><mi>M</mi> <mi>n</mi> </msub></mrow></math></span>, where, <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>M</mi> <mi>n</mi> </msub></math></span> is in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#946;</mi></math></span>-nf.
          </p>
          <p>This Theorem basically states that every term in <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> is strongly-normalizing, or that evaluating leads to termination (and no form of undecidability or infinite looping). The
             Proof for this Theorem is highly non-trivial and uses the concept of Logical Relations to find a property that is an inductive
-            invariant for the System. 
+            invariant for the System.
          </p>
-         <p>At this point, we have covered a lot of ground and laid the foundations for <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> by stating the motivating behind its construction, its semantics, and its three most crucial properties. 
+         <p>At this point, we have covered a lot of ground and laid the foundations for <span class="inlinemediaobject"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>&#955;</mi> <mi>&#969;</mi> </msub></math></span> by stating the motivating behind its construction, its semantics, and its three most crucial properties.
          </p>
          <p>So, until the next post (where we will cover the Calculus-of-Constructions), the reader is encouraged to prove the 3 Properties!
-            
+
          </p>
       </div>
    </body>
