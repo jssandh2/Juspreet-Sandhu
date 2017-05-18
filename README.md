@@ -2,7 +2,7 @@
 ### ACADEMIC
 * Pages pertaining to Academic Interests and my CV/Resume :
     * [**Academic Interests**](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
-    * [**Resume**](https://juspreetsandhu.files.wordpress.com/2015/05/juspreet_s_sandhu_resume_final_2017.pdf)
+    * [**Resume**](https://juspreetsandhu.files.wordpress.com/2017/05/juspreet_s_sandhu_resume_research.pdf)
  
 ### BLOGS
 * Here are links to my blogs on _Mathematics_, _Programming Language Theory_ and some _Repositories_ I've written :
