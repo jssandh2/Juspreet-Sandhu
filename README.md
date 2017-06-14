@@ -17,6 +17,7 @@
 
 ## ABOUT ME
 * **CURRENT** 
+    * **UPDATE** : I will be attending [**_OPLSS-2017_**](https://www.cs.uoregon.edu/research/summerschool/summer17/) from June-26 to July-8. See you there!
     *   I'm a Software Engineer in the **Search & Discovery** (S&D) Team at **Tumblr Inc.**. I work primarily on _Search Parallelization_, _Filtering_ and _Relational Modeling_.
     *   Beginning **April, 2017** I also started working with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
 * **BEFORE** 
