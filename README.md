@@ -17,11 +17,11 @@
 
 ## ABOUT ME
 * **CURRENT** 
-    *   I will be starting as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Team** on _August-7, 2017_.
+    *   I started as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Team** on _August-3, 2017_.
     *   Beginning _April, 2017_ I also started working with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
 * **BEFORE** 
     *   I attended [**_OPLSS-2017_**](https://www.cs.uoregon.edu/research/summerschool/summer17/) from _June-26, 2017_ - _July-8, 2017_.
-    *   I was a Software Engineer at [**Tumblr Inc.**](https://www.tumblr.com/jobs) in the **Search & Discovery** Team from _December, 2015_ - _August, 2017_. I worked primarily on Search Parallelization, Filtering and Relational Modeling.
+    *   I was a Software Engineer at [**Tumblr Inc.**](https://www.tumblr.com/jobs) in the **Search & Discovery** Team from _December-7, 2015_ - _August-2, 2017_. I worked primarily on Search Parallelization, Filtering and Relational Modeling.
     *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
     *   While at **UIUC**, I did the following things :
         *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
