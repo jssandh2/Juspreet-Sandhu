@@ -18,8 +18,9 @@
 ## ABOUT ME
 * **CURRENT** 
     *   I started as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Team** on _August-3, 2017_.
-    *   Beginning _April, 2017_ I also started working with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
+    *   Beginning _September, 2017_ I also started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
 * **BEFORE** 
+    *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
     *   I attended [**_OPLSS-2017_**](https://www.cs.uoregon.edu/research/summerschool/summer17/) from _June-26, 2017_ - _July-8, 2017_.
     *   I was a Software Engineer at [**Tumblr Inc.**](https://www.tumblr.com/jobs) in the **Search & Discovery** Team from _December-7, 2015_ - _August-2, 2017_. I worked primarily on Search Parallelization, Filtering and Relational Modeling.
     *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
