@@ -1,65 +1,12 @@
-<p>Euler Cycles</p>
-
-<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
-
-<p>Motivation : Genome Assembly Program &rarr; Given a set S = 3-perm({A,T,C,G}, find a string s = w&#8321;w&#8322;..w&#7523;, s.t., w&#7522; &#8712; S, &#8704; w&#7522;</p>
-
-<p>Def&#8319;: Given G = (V,E), an Eulerian Cycle E(G), is a cycle C&#7522;, s.t., |C&#7522;| = |E|</p>
-
-<p>Th&#7504; : Given G = (V,E), st, G is connected and undirected, &#8707; E(G) &#8660; &#8704; v &#8712; V(G) , deg(v) = Even</p>
-
-<p>Proof : We split it into 2 cases -</p>
-
-<p> a) Given : G =(V,E), s.t., G has E(G)</p>
-
-<p> Then, let's assume that &#8707; v &#8712; V(G) s.t., deg(v) = odd.</p>
-
-<p> Clearly, when v is traversed in E(G), everytime it is "approached", it must be "left". However, the odd degree implies that there will be one edge that cannot</p>
-
-<p> be traversed as a result of no unvisited edges that can be left from. Hence, &#8707; edge e = (v, v'), s.t., e &#8713; E(G). This is a contradiction. Therefore, deg(v) = Even</p>
-
-<p> b) Given : G=(V,E) s.t., &#8704; v &#8712; V(G), dev(v) = Even</p>
-
-<p> Pick some v &#8712; V(G). Start on an outside Random Walk from this. Let w = v&#8321;v&#8322;..v&#7522;, until you hit v&#8321; = v&#7522;, and |w| &lt; |E|. Then &#8707; v&#7522;' &#8712; w, s.t., v&#7522;' has an unexplored</p>
-
-<p> out edge. Start a new walk and repeat this procedure. On intersecting vertices on walks w&#8336; and w&#11388;, we can union the 2 cycles to create a new one. This way, when we</p>
-
-<p> have fully explored all the edges, and unioned all intersecting walks, we end up with an Eulerian Cycle</p>
-
-<p> QED</p>
-
-<p>Note: An Eulerian Path E&#11388;(G) = v&#8321;...v&#11388;....v&#7522; can be extended to an Eulerian Cycle E(G) = v&#8321;...v&#11388;...v&#7522;v&#8321;, by making E = E &#8746; {v&#7522;,v&#8321;}</p>
-
-<p>&rarr; Part b) of the proof the Th&#7504; shows that &#8707; an Efficient Algorithm A, s.t., A can compute the Eulerian Cycle of G</p>
-
-<p>Hamiltonian Cycles</p>
-
-<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
-
-<p>Motivation : Goal is to traverse the Graph and visit every vertex just once, not only every edge</p>
-
-<p>Def&#8319;: A simple Euler Cycle, i.e., H(G) = simple(E(G))</p>
-
-<p>Th&#7504; : Given G = (V,E), finding H(G) is NP-Complete</p>
-
-<p>Genome Assembly</p>
-
-<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
-<p>Construction : Hamiltonian Cycle over a Graph G = (V,E), where, V = S = 3-perm{A,T,C,G} &#8743; E = {(v&#7522;,v&#11388;) | suffix(v&#7522;) = 2-prefix(v&#11388;)}</p>
-
-<p>Sol&#8319; : Find a Hamiltonian Path over this graph setup &rarr; NP-Complete</p>
-
-<p>Idea : See, if we can reduce the Genome Problem in Poly(|S|) time to a problem P, s.t., P &#8713; NP-Complete</p>
-
-<p> i) Try reducing to a De-Brujin Graph DBG, where, an edge represents a valid s&#7522; &#8712; S.</p>
-
-<p> ii) So - &#8704; s&#7522; , s&#7522; &rarr; (v&#7522;,v&#11388;), where v&#7522; = 2-prefix(s&#7522;) and v&#11388; = 2-suffix(s&#11388;)</p>
-
-<p> iii) Now, in order to find a string s = w&#8321;w&#8322;....w&#7522; , s.t., we simply construct an Eulerian Cycle.</p>
-
-<p> a) w&#7522; = perm(A,T,C,G), w&#11388; = perm'(A,T,C,J)</p>
-
-<p> b) word(w&#7522;w&#11388;) = perm(A,T,C,G) &#8746; perm'(A,T,C,G) = (v&#7522;, v&#11388;) &#8712; E</p>
-
-<p> c) By induction, as every edge represents one 3-perm, going over all edges represents a valid 3-perm string concatenation</p>
+<p>Euler Cycles<br />&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br />Motivation : Genome Assembly Program &rarr; Given a set S = 3-perm({A,T,C,G}, find a string s = w₁w₂..wᵣ, s.t., wᵢ &isin; S, &forall; wᵢ</p>
+<p>Defⁿ: Given G = (V,E), an Eulerian Cycle E(G), is a cycle Cᵢ, s.t., |Cᵢ| = |E|</p>
+<p>Thᵐ : Given G = (V,E), st, G is connected and undirected, &exist; E(G) &hArr; &forall; v &isin; V(G) , deg(v) = Even<br />Proof : We split it into 2 cases -<br /> a) Given : G =(V,E), s.t., G has E(G)<br /> Then, let's assume that &exist; v &isin; V(G) s.t., deg(v) = odd.<br /> Clearly, when v is traversed in E(G), everytime it is "approached", it must be "left". However, the odd degree implies that there will be one edge that cannot<br /> be traversed as a result of no unvisited edges that can be left from. Hence, &exist; edge e = (v, v'), s.t., e &notin; E(G). This is a contradiction. Therefore, deg(v) = Even</p>
+<p>b) Given : G=(V,E) s.t., &forall; v &isin; V(G), dev(v) = Even<br /> Pick some v &isin; V(G). Start on an outside Random Walk from this. Let w = v₁v₂..vᵢ, until you hit v₁ = vᵢ, and |w| &lt; |E|. Then &exist; vᵢ' &isin; w, s.t., vᵢ' has an unexplored<br /> out edge. Start a new walk and repeat this procedure. On intersecting vertices on walks wₐ and wⱼ, we can union the 2 cycles to create a new one. This way, when we<br /> have fully explored all the edges, and unioned all intersecting walks, we end up with an Eulerian Cycle</p>
+<p>QED</p>
+<p>Note: An Eulerian Path Eⱼ(G) = v₁...vⱼ....vᵢ can be extended to an Eulerian Cycle E(G) = v₁...vⱼ...vᵢv₁, by making E = E &cup; {vᵢ,v₁}</p>
+<p>&rarr; Part b) of the proof the Thᵐ shows that &exist; an Efficient Algorithm A, s.t., A can compute the Eulerian Cycle of G</p>
+<p><br />Hamiltonian Cycles<br />&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br />Motivation : Goal is to traverse the Graph and visit every vertex just once, not only every edge</p>
+<p>Defⁿ: A simple Euler Cycle, i.e., H(G) = simple(E(G))</p>
+<p>Thᵐ : Given G = (V,E), finding H(G) is NP-Complete</p>
+<p><br />Genome Assembly<br />&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br />Construction : Hamiltonian Cycle over a Graph G = (V,E), where, V = (S = 3-perm{A,T,C,G}) &and; E = {(vᵢ,vⱼ) | suffix(vᵢ) = 2-prefix(vⱼ)}<br />Solⁿ : Find a Hamiltonian Path over this graph setup &rarr; NP-Complete</p>
+<p>Idea : See, if we can reduce the Genome Problem in Poly(|S|) time to a problem P, s.t., P &notin; NP-Complete<br /> i) Try reducing to a De-Brujin Graph DBG, where, an edge represents a valid sᵢ &isin; S.<br /> ii) So - &forall; sᵢ , sᵢ &rarr; (vᵢ,vⱼ), where vᵢ = 2-prefix(sᵢ) and vⱼ = 2-suffix(sⱼ)<br /> iii) Now, in order to find a string s = w₁w₂....wᵢ , s.t., we simply construct an Eulerian Cycle.<br /> a) wᵢ = perm(A,T,C,G), wⱼ = perm'(A,T,C,J)<br /> b) word(wᵢwⱼ) = perm(A,T,C,G) &cup; perm'(A,T,C,G) = (vᵢ, vⱼ) &isin; E<br /> c) By induction, as every edge represents one 3-perm, going over all edges represents a valid 3-perm string concatenation</p>
