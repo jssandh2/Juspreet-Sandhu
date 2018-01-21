@@ -12,7 +12,7 @@
 
 ### MUSIC & PHOTOGRAPHY
 * Pages pertaining to my Musical Interests/Performances and my Photography :
-    * [**Classical Guitar Videos**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
+    * [**Classical Guitar**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
     * [**Photography**](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
 
 ## ABOUT ME
@@ -29,7 +29,7 @@
         *   Was a **Grader ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
         *   A [SPIN Internship](http://spin.ncsa.illinois.edu/interns/2014.html) at the [NCSA](http://www.ncsa.illinois.edu/) to investigate NLP Algorithms to extract meaningful data from Audio-Conversations by Firemen.
         *   Played Badminton with A-Team for UIUC.
-* **INTERESTS**
+## INTERESTS
     *   Besides **Academics**, I have a few other interests :
         *   **Classical Music** : I've been studying Classical Guitar since 2006\. I play a [Cordoba-C9](http://www.cordobaguitars.com/p/c9) for now (Cedar Top). I'm looking into getting an [Alhambra-8P](http://www.alhambrausa.com/guitars/classical/9/8-p.html) or [Alhambra-9P](http://www.alhambrausa.com/guitars/classical/10/9-p.html).
         *   **Badminton** : I started playing Badminton competitively around 2007. I played Zonals and State-Level Badminton in India, and was part of the A-Team at UIUC. Unfortunately, I haven't been playing/training since 2015.
