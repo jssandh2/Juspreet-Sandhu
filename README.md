@@ -17,7 +17,7 @@
 
 ## ABOUT ME
 * **CURRENT** 
-    * I will be joining **Harvard University** in Fall-2018 as a Doctoral student in the Computer Science department, with a concentration/focus in _Theoretical Computer Science_ and _Programming Languages_.
+    * I will be joining **Harvard University** in Fall-2018 as a Doctoral student in the Computer Science department.
     *   I started as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Team** on _August-3, 2017_.
     *   Beginning _September, 2017_ I also started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
 * **BEFORE** 
