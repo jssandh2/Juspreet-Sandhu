@@ -5,19 +5,24 @@
     * [**Resume**](https://juspreetsandhu.files.wordpress.com/2017/12/juspreet_s_sandhu_resume1.pdf)
  
 ### BLOGS
+
 * Here are links to my blogs on _Mathematics_, _Programming Language Theory_ and some _Repositories_ I've written :
     * [**Mathematics Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
     * [**Programming Language Theory Blog**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
     * [**Repositories**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
 
+
+
 ### MUSIC & PHOTOGRAPHY
+
 * Pages pertaining to my Musical Interests/Performances and my Photography :
     * [**Classical Guitar**](https://jssandh2.github.io/Juspreet-Sandhu/music.html)
     * [**Photography**](https://juspreetsandhu.wordpress.com/photography-badminton-photos/)
 
+
 ## ABOUT ME
+
 * **CURRENT** 
-    * I will be joining **Harvard University** in Fall-2018 as a Doctoral student in the Computer Science department.
     *   I started as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Team** on _August-3, 2017_.
     *   Beginning _September, 2017_ I also started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
 * **BEFORE** 
@@ -31,7 +36,9 @@
         *   A [SPIN Internship](http://spin.ncsa.illinois.edu/interns/2014.html) at the [NCSA](http://www.ncsa.illinois.edu/) to investigate NLP Algorithms to extract meaningful data from Audio-Conversations by Firemen.
         *   Played Badminton with A-Team for UIUC.
 
+
 ## INTERESTS
+
 *   Besides **Academics**, I have a few other interests :
     *   **Classical Music** : I've been studying Classical Guitar since 2006\. I play a [Cordoba-C9](http://www.cordobaguitars.com/p/c9) for now (Cedar Top). I'm looking into getting an [Alhambra-8P](http://www.alhambrausa.com/guitars/classical/9/8-p.html) or [Alhambra-9P](http://www.alhambrausa.com/guitars/classical/10/9-p.html).
     *   **Badminton** : I started playing Badminton competitively around 2007. I played Zonals and State-Level Badminton in India, and was part of the A-Team at UIUC. Unfortunately, I haven't been playing/training since 2015.
