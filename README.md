@@ -23,8 +23,8 @@
 ## ABOUT ME
 
 * **CURRENT**
-    *   Beginning September-2018, I will be joining [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
-    *   In _September, 2017_ I started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
+    *   Beginning _September-2018_ I will be joining [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
+    *   In _September-2017_ I started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
 * **BEFORE**
     *   I worked as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho. 2com/) in the **Graph Infrastructure Team** from _August-3, 2017_ to _July-10, 2018_.
     *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
