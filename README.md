@@ -23,8 +23,7 @@
 ## ABOUT ME
 
 * **CURRENT**
-    *   Beginning _September-2018_ I will be joining [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
-    *   In _September-2017_ I started working with **Shravan Narayan** to add Liquid Types to the [LLVM Compiler](https://github.com/jssandh2/RefinementTypes_llvm/tree/juspreet-immutable-local-mac).
+    *   I am currently at [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
 * **BEFORE**
     *   I worked as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Infrastructure Team** from _August-3, 2017_ to _July-10, 2018_.
     *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
@@ -36,6 +35,7 @@
         *   Was a **Grader ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
         *   A [SPIN Internship](http://spin.ncsa.illinois.edu/interns/2014.html) at the [NCSA](http://www.ncsa.illinois.edu/) to investigate NLP Algorithms to extract meaningful data from Audio-Conversations by Firemen.
         *   Played Badminton with A-Team for UIUC.
+
 
 
 ## INTERESTS
