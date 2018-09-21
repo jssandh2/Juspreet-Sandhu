@@ -27,8 +27,7 @@
 * **BEFORE**
     *   I worked as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Infrastructure Team** from _August-3, 2017_ to _July-10, 2018_.
     *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
-    *   I attended [**_OPLSS-2017_**](https://www.cs.uoregon.edu/research/summerschool/summer17/) from _June-26, 2017_ - _July-8, 2017_.
-    *   I was a Software Engineer at [**Tumblr Inc.**](https://www.tumblr.com/jobs) in the **Search & Discovery** Team from _December-7, 2015_ - _August-2, 2017_. I worked primarily on Search Parallelization, Filtering and Relational Modeling.
+    *   I was a Software Engineer at [**Tumblr Inc.**](https://www.tumblr.com/jobs) in the **Search & Discovery** Team from _December-7, 2015_ - _August-2, 2017_. 
     *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
     *   While at **UIUC**, I did the following things :
         *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
