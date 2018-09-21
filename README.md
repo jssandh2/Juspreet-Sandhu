@@ -18,7 +18,7 @@
 ## ABOUT ME
 
 * **CURRENT**
-    *   I am currently at [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
+    *   I am currently a PhD student in Computer Science at [**Harvard University**]() with broad interests in _Complexity_, _Optimization_, _Approximation_, _Algebra_ & _Programming Language Theory_.
 * **BEFORE**
     *   I worked as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Infrastructure Team** from _August-3, 2017_ to _July-10, 2018_.
     *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
