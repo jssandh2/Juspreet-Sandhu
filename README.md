@@ -26,6 +26,6 @@
     *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
     *   While at **UIUC**, I did the following things :
         *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
-        *   Was a **Grader ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
+        *   Was a **TA ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
         *   A [SPIN Internship](http://spin.ncsa.illinois.edu/interns/2014.html) at the [NCSA](http://www.ncsa.illinois.edu/) to investigate NLP Algorithms to extract meaningful data from Audio-Conversations by Firemen.
         *   Played Badminton with A-Team for UIUC.
