@@ -17,5 +17,5 @@
     * **INTERESTS**:
 	  * [_Academic Interests_](https://jssandh2.github.io/Juspreet-Sandhu/academic_interests.html)
 	  * [_Resume_](https://juspreetsandhu.files.wordpress.com/2017/12/juspreet_s_sandhu_resume1.pdf)
-    * [My previous shenanigins and work/academic life](https://jssandh2.github.io/Juspreet-Sandhu/prior_life.html)
+* [My previous shenanigins and work/academic life](https://jssandh2.github.io/Juspreet-Sandhu/prior_life.html)
 
