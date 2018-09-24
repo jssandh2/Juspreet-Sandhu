@@ -11,7 +11,7 @@
 ### BLOGS
 
 * Here are links to my blogs on _Mathematics_, _Programming Language Theory_ and some _Repositories_ I've written :
-    * [**Mathematics Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
+    * [**Theory/Math Blog**](https://jssandh2.github.io/Juspreet-Sandhu/math_proofs.html)
     * [**Programming Language Theory Blog**](https://jssandh2.github.io/Juspreet-Sandhu/plt.html)
     * [**Repositories**](https://jssandh2.github.io/Juspreet-Sandhu/code.html)
 
