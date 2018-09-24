@@ -18,7 +18,7 @@
 ## ABOUT ME
 
 * **CURRENT**
-    *   I am currently at [**Harvard University**]() as a PhD student in Computer Science, with interests in _Complexity, Algebra & Programming Language Theory_.
+    *   I am currently a PhD student in Computer Science at [**Harvard University**]() with broad interests in _Complexity_, _Optimization_, _Approximation_, _Algebra_ & _Programming Language Theory_.
 * **BEFORE**
     *   I worked as a Research Software Engineer at [**Kensho, Inc.**](https://www.kensho.com/) in the **Graph Infrastructure Team** from _August-3, 2017_ to _July-10, 2018_.
     *   I worked with [**James Wilcox**](http://homes.cs.washington.edu/~jrw12/) in April, 2017 to extend the [**Verdi**](http://verdi.uwplse.org) framework to include more robust *Network Semantics* and provide *Formal Verification* for more *Distributed Systems*.
@@ -26,6 +26,6 @@
     *   Before working, I went to school at [UIUC](http://illinois.edu/), where I did my **BS** in **Physics** and received **Minors** in **Mathematics, Computer Science**. I graduated in May, 2015.
     *   While at **UIUC**, I did the following things :
         *   An Independent Study under [Prof. Zhai](http://czhai.cs.illinois.edu/) to investigate the effect of Coreference-Resolution on MAP for Search Queries using the [stanford-core-nlp](http://stanfordnlp.github.io/CoreNLP/) package.
-        *   Was a **Grader ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
+        *   Was a **TA ([CS-410](https://chara.cs.illinois.edu/sites/cs410))** in Spring, 2015.
         *   A [SPIN Internship](http://spin.ncsa.illinois.edu/interns/2014.html) at the [NCSA](http://www.ncsa.illinois.edu/) to investigate NLP Algorithms to extract meaningful data from Audio-Conversations by Firemen.
         *   Played Badminton with A-Team for UIUC.
