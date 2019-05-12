@@ -1,0 +1,1394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>CS229r: Duality between Brascamp-Lieb Inequality &amp; Subadditivity of Entropy</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="cs229r_report.tex"> 
+<link rel="stylesheet" type="text/css" href="cs229r_report.css"> 
+</head><body 
+>
+<div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+
+<h2 class="titleHead">CS229r: Duality between Brascamp-Lieb Inequality &amp;
+Subadditivity of Entropy</h2>
+<div class="author" ><span 
+class="ptmr8t-x-x-120">Juspreet Singh Sandhu and Prayaag Venkat</span></div>
+<br />
+<div class="date" ></div>
+</div>
+<a 
+ id="x1-2r1"></a>
+<h3 class="sectionHead"><span class="titlemark">1    </span> <a 
+ id="x1-10001"></a>Introduction</h3>
+<!--l. 53--><p class="noindent" >The Brascamp-Lieb (BL) inequality is a general inequality which captures many well-known inequalities as special
+cases.
+<div class="newtheorem">
+<!--l. 55--><p class="noindent" ><span class="head">
+<a 
+ id="x1-1001r1"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 1 </span>(Brascamp-Lieb Inequality, general form&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>)<span 
+class="ptmb8t-x-x-109">.</span>  </span> <span 
+class="ptmri8t-x-x-109">Let </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">be a collection of surjective linear maps</span>
+<span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup> <span 
+class="ptmri8t-x-x-109">and </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">be a collection of positive scalars such that:</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-1002r1"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report0x.png" alt=" m
+&#x2211;
+   cini = n.
+i=1
+" class="math-display" ></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 59--><p class="nopar" >
+<span 
+class="ptmri8t-x-x-109">Then for any collection </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">of non-negative functions </span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> <span 
+class="ptmri8t-x-x-109">such that</span> <span 
+class="cmex-10x-x-109">&#x222B;</span> <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span><sub>
+<span 
+class="cmmi-6">i</span></sub></sup></sub><span 
+class="cmsy-10x-x-109">|</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmsy-10x-x-109">|</span><span 
+class="cmmi-10x-x-109">dx &#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span><span 
+class="ptmri8t-x-x-109">, the</span>
+                                                                                         
+                                                                                         
+<span 
+class="ptmri8t-x-x-109">following inequality holds</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-1003r2"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report1x.png" alt="&#x222B;    &#x220F;m                 m&#x220F;  (&#x222B;            )ci
+        fi(Bix)cidx &#x2264; D            fi(x)dx    ,
+ x&#x2208;&#x211D;ni=1                i=1   x&#x2208;&#x211D;ni
+" class="math-display" ></center></td><td class="equation-label">(2)</td></tr></table>
+<!--l. 63--><p class="nopar" >
+<span 
+class="ptmri8t-x-x-109">where </span><span 
+class="cmmi-10x-x-109">D </span><span 
+class="ptmri8t-x-x-109">is a constant that depends only on </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">and </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup><span 
+class="ptmri8t-x-x-109">.</span>
+</div>
+<!--l. 67--><p class="noindent" >In Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a>, <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> are to be thought of as projections of <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> onto lower dimensional spaces. Roughly, this
+inequality allows one to upper bound the integral of a product of functions on lower-dimensional spaces by the
+product of integrals. Condition&#x00A0;<a 
+href="#x1-1002r1">1<!--tex4ht:ref: eqn:bl-condition --></a> is a condition which ensures that the &#8220;dimensions&#8221; on either side of the inequality
+&#8220;match&#8221;. In Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a>, the constant <span 
+class="cmmi-10x-x-109">D </span>has been explictly characterized as the solution of a certain optimization
+problem involving <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> and <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup>. In the following, we will give several examples to provide intuition and
+illustrate the key aspects of Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a>.
+<span class="likeparagraphHead"><a 
+ id="x1-20001"></a>Hölder&#8217;s Inequality</span>
+Pick <span 
+class="cmmi-10x-x-109">m </span><span 
+class="cmr-10x-x-109">= 2</span>, <span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmr-10x-x-109">=</span> <img 
+src="cs229r_report2x.png" alt="1
+p1-"  class="frac" align="middle"><span 
+class="cmmi-10x-x-109">,c</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmr-10x-x-109">=</span> <img 
+src="cs229r_report3x.png" alt=" 1
+p2"  class="frac" align="middle"> for <span 
+class="cmmi-10x-x-109">p</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,p</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-109">&#x2265; </span><span 
+class="cmr-10x-x-109">1 </span>and let <span 
+class="cmmi-10x-x-109">u,v </span><span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> be functions such that
+<span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-10x-x-109">u</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><sup><span 
+class="cmmi-8">p</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmmi-10x-x-109">dx,</span><span 
+class="cmex-10x-x-109">&#x222B;</span> <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span>
+  </sup></sub><span 
+class="cmmi-10x-x-109">v</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><sup><span 
+class="cmmi-8">p</span><sub><span 
+class="cmr-6">2</span></sub></sup><span 
+class="cmmi-10x-x-109">dx &#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span>. Set <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">u</span><sup><span 
+class="cmmi-8">p</span><sub><span 
+class="cmr-6">1</span></sub></sup> and <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">v</span><sup><span 
+class="cmmi-8">p</span><sub><span 
+class="cmr-6">2</span></sub></sup> and take both the projections <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,B</span><sub><span 
+class="cmr-8">2</span></sub> to be the
+identity map. Then, Condition&#x00A0;<a 
+href="#x1-1002r1">1<!--tex4ht:ref: eqn:bl-condition --></a> is easily seen to be satisfied when
+<center class="math-display" >
+<img 
+src="cs229r_report4x.png" alt="-1 + -1 = 1
+p1   p2
+" class="math-display" ></center>
+<!--l. 85--><p class="nopar" > and Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> simplifies to Hölder&#8217;s inequality:
+<center class="math-display" >
+<img 
+src="cs229r_report5x.png" alt="|&#x27E8;f,g&#x27E9;| &#x2264; &#x2225;f&#x2225;p1&#x2225;g&#x2225;p2.
+" class="math-display" ></center>
+<!--l. 89--><p class="nopar" > This example illustrates the flexibility of Condition&#x00A0;<a 
+href="#x1-1002r1">1<!--tex4ht:ref: eqn:bl-condition --></a>; it allows us to choose <span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub> in such a way so as to control the
+left-hand side of Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> by different norms of the functions. A well-known special-case of Holder&#8217;s inequality
+is the <span 
+class="ptmri8t-x-x-109">Cauchy-Schwarz Inequality</span>, which can be retreived by setting <span 
+class="cmmi-10x-x-109">p</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">p</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmr-10x-x-109">= 2</span>.
+                                                                                         
+                                                                                         
+<span class="likeparagraphHead"><a 
+ id="x1-30001"></a>Loomis-Whitney Inequality</span>
+Pick <span 
+class="cmmi-10x-x-109">m </span><span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">n</span>, <span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmr-10x-x-109">=</span> <span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmr-10x-x-109">=</span> <img 
+src="cs229r_report6x.png" alt="n1-1-"  class="frac" align="middle">, and <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> be the projection onto the <span 
+class="cmmi-10x-x-109">i</span>th coordinate hyperplane (meaning
+<span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,x</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmr-10x-x-109">) = (</span><span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,x</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,x</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,x</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmr-10x-x-109">)</span>), for <span 
+class="cmmi-10x-x-109">i </span><span 
+class="cmr-10x-x-109">= 1</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,n</span>. Again, Condition&#x00A0;<a 
+href="#x1-1002r1">1<!--tex4ht:ref: eqn:bl-condition --></a> is straightforward to check. For
+<span 
+class="cmmi-10x-x-109">i </span><span 
+class="cmr-10x-x-109">= 1</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,n</span>, take any <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> such that <span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span><span 
+class="cmsy-6">-</span><span 
+class="cmr-6">1</span></sup></sub><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-10x-x-109">dx &#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span>. Then, Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> applied to the
+functions <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> simplifies to the Loomis-Whitney inequality:
+<center class="math-display" >
+<img 
+src="cs229r_report7x.png" alt="&#x222B;     &#x220F;m              &#x220F;m
+         fi(Bi (x ))dx &#x2264;    &#x2225;fi&#x2225;n-1.
+ x&#x2208;&#x211D;n i=1              i=1
+" class="math-display" ></center>
+<!--l. 102--><p class="nopar" > We remark that this is a (continuous version of) a special case of Shearer&#8217;s Lemma, see&#x00A0;<a 
+href="#x1-8002r7">7<!--tex4ht:ref: thm:shearer --></a>. Shearer&#8217;s Lemma itself
+can be recovered through different choices of <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">} </span>and <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span>. This example illustrates two important features of
+Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a>. First, we prove statements about a collection <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,f</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmsy-10x-x-109">} </span>of many functions (instead of just <span 
+class="cmmi-10x-x-109">m </span><span 
+class="cmr-10x-x-109">= 2</span>, as
+in Hölder). Second, we can choose the projections <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> to replace an integral over <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> with integrals over <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup>,
+the latter of which may be easier to evaluate in applications. Moreover, the <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">} </span>and <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">} </span>do not have to all be the
+same.
+<!--l. 105--><p class="noindent" >To get a better understanding of what the Loomis-Whitney inequality is saying, let <span 
+class="cmmi-10x-x-109">S </span><span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> be a measurable set and
+take <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">= </span><span 
+class="msbm-10x-x-109">I</span><sub><span 
+class="cmmi-8">B</span><sub><span 
+class="cmmi-6">i</span></sub><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">S</span><span 
+class="cmr-8">)</span></sub><sup><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">&#x2215;</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1)</span></sup> to be the indicator function (raised to the <span 
+class="cmr-10x-x-109">1</span><span 
+class="cmmi-10x-x-109">&#x2215;</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">1) </span>power) for the projection of <span 
+class="cmmi-10x-x-109">S </span>onto the
+<span 
+class="cmmi-10x-x-109">i</span>th coordinate plane. Note that if <span 
+class="cmmi-10x-x-109">x </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">S </span>then <span 
+class="cmex-10x-x-109">&#x220F;</span>
+  <sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)) = 1</span>. That is, if a point is in the set then all of its
+<span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">1)</span>-dimensional projections are in the <span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">1)</span>-dimensional projections of the set. This means, that the left-hand
+side of the Loomis-Whitney inequality is an upper bound on <span 
+class="cmmi-10x-x-109">vol</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">S</span><span 
+class="cmr-10x-x-109">)</span>, where <span 
+class="cmmi-10x-x-109">vol</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmsy-10x-x-109">&#x22C5;</span><span 
+class="cmr-10x-x-109">) </span>denotes the volume
+of a set in <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup>. Along the same vein, considering each of the terms on the right-hand side, we have
+that
+<center class="math-display" >
+<img 
+src="cs229r_report8x.png" alt="         ( &#x222B;           )1 &#x2215;(n-1)
+&#x2225;fi&#x2225;n- 1 =         IB (S )       =  (vol(Bi(S)))1&#x2215;(n-1).
+            x&#x2208;&#x211D;n-1  i
+" class="math-display" ></center>
+<!--l. 108--><p class="nopar" > Substituting, the Loomis-Whitney inequality then states that:
+<center class="math-display" >
+<img 
+src="cs229r_report9x.png" alt="        &#x220F;n
+vol(S ) &#x2264;   vol(Bi(S))1&#x2215;(d-1).
+        i=1
+" class="math-display" ></center>
+<!--l. 112--><p class="nopar" >
+<!--l. 114--><p class="noindent" >In other words, we obtain an upper bound on the volume of a set in terms of the volumes of its lower-dimensional
+projections. For example, when <span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmr-10x-x-109">= 2</span>, this says that the area of a set is at most its length (along the vertical
+y-axis) times its width (along the horizontal x-axis). The above inequality generalizes this to higher
+dimensions.
+                                                                                         
+                                                                                         
+<!--l. 116--><p class="noindent" >This example illustrates how Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a> is often applied; the functions <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-109">&#x2218;</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub> are taken to be indicator functions of
+lower dimensional projections a set, so that the left-hand side of Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> represents the volume of the set and
+the right-hand side involves volumes of the lower-dimensional projections. See the lecture notes of Ball&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> for
+further applications of this technique in convex geometry.
+<span class="likeparagraphHead"><a 
+ id="x1-40001"></a>Application: Counting triangles in large random graphs</span>
+We now present another special case of the BL inequality that was recently used by Lubetzy and Zhao&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> to
+analyze the number of triangles appearing in large random graphs. Specifically, one of the technical lemmas
+they proved states that if <span 
+class="cmmi-10x-x-109">f </span><span 
+class="cmr-10x-x-109">: [0</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmr-10x-x-109">1]</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmr-10x-x-109">[0</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmr-10x-x-109">1] </span>is a measurable function such that <span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x,y</span><span 
+class="cmr-10x-x-109">) = </span><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">y,x</span><span 
+class="cmr-10x-x-109">)</span>,
+then:
+<table 
+class="equation"><tr><td><a 
+ id="x1-4001r3"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report10x.png" alt="||&#x222B;                                   ||  ( &#x222B;                    )3 &#x2215;2
+||           f (x,y )f (y,z )f (z,x )dxdydz ||&#x2264;             f(x,y)2dxdy     .
+| (x,y,z)&#x2208;[0,1]3                         |     (x,y)&#x2208;[0,1]2
+" class="math-display" ></center></td><td class="equation-label">(3)</td></tr></table>
+<!--l. 122--><p class="nopar" >
+<!--l. 124--><p class="noindent" >Roughly speaking, the triple of pairs <span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x,y</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">y,z</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">z,x</span><span 
+class="cmr-10x-x-109">) </span>corresponds to a triangle in a graph and the quantity on the
+left-hand side of&#x00A0;<a 
+href="#x1-4001r3">3<!--tex4ht:ref: eqn:lubetzky --></a> represents the density of triangles in a certain random graph associated with the function <span 
+class="cmmi-10x-x-109">f</span>. This
+inequality allows one to estimate the number of triangles in this graph based on the number of edges, which is a
+simpler quantity to understand in the setting of <span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>.
+<!--l. 126--><p class="noindent" >To solve the problem of counting larger subgraphs than triangles, they derive a generalized version of inequality&#x00A0;<a 
+href="#x1-4001r3">3<!--tex4ht:ref: eqn:lubetzky --></a>.
+However, it is straightforward to see that inequality&#x00A0;<a 
+href="#x1-4001r3">3<!--tex4ht:ref: eqn:lubetzky --></a> is just a special case of the Loomis-Whitney inequality and
+the generalized version is just an extension of Hölder&#8217;s Inequality, which is again a special case of
+Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a>.
+<a 
+ id="x1-4002r1"></a>
+<h4 class="subsectionHead"><span class="titlemark">1.1    </span> <a 
+ id="x1-50001"></a>Past work on the Brascamp-Lieb inequalities</h4>
+<!--l. 129--><p class="noindent" >In this section, we provide a brief summary of the history of the BL inequality. Originally proven in various special
+cases by Lieb&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>, Brascamp, Lieb and Luttinger&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> and Brascamp and Lieb&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>, the general form of the
+BL-inequality given in Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a> is due to Bennett et al.&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>. Inequalities of this type have application in
+mathematical physics&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>, convex geometry&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> and beyond.
+<!--l. 131--><p class="noindent" >We briefly mention an interesting connection between the BL inequality and theoretical computer science. As
+discussed previously, the constant <span 
+class="cmmi-10x-x-109">D </span>in Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> was characterized in&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> as the solution of an optimization
+problem. Recently, Garg et al.&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> studied the algorithmic task of computing <span 
+class="cmmi-10x-x-109">D</span>, given the projections <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> and
+constants <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup>. Although all special cases of Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a> considered in this report satisfy the inequality with
+<span 
+class="cmmi-10x-x-109">D </span><span 
+class="cmr-10x-x-109">= 1</span>, until the work of Garg et al., it was not known how to compute <span 
+class="cmmi-10x-x-109">D </span>in general in polynomial
+                                                                                         
+                                                                                         
+time.
+<a 
+ id="x1-5001r1"></a>
+<h3 class="sectionHead"><span class="titlemark">2    </span> <a 
+ id="x1-60002"></a>Subadditivity of entropy</h3>
+<!--l. 134--><p class="noindent" >We begin by introducing the basic subadditivity of entropy inequality and then stating a slight generalization of it
+(Han&#8217;s Inequality (<a 
+href="#x1-7001r5">5<!--tex4ht:ref: thm:hansineq --></a>)), yielding a connection to Shearer&#8217;s Lemma (<a 
+href="#x1-8002r7">7<!--tex4ht:ref: thm:shearer --></a>). We end with a general statement about the
+subadditivity of entropy (<a 
+href="#x1-8004r8">8<!--tex4ht:ref: thm:sae --></a>).<br 
+class="newline" />
+<div class="newtheorem">
+<!--l. 135--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6001r2"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 2 </span>(<span 
+class="ptmb8t-x-x-109">Basic Subadditivity of Entropy</span>)<span 
+class="ptmb8t-x-x-109">.</span>  </span> <span 
+class="ptmri8t-x-x-109">For random variables </span><span 
+class="cmmi-10x-x-109">X</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,..,X</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="ptmri8t-x-x-109">, we have the following:</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-6002r4"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report11x.png" alt="              &#x2211;n
+H(X1, ..,Xn ) &#x2264;    H (Xi )
+              i=1
+" class="math-display" ></center></td><td class="equation-label">(4)</td></tr></table>
+<!--l. 140--><p class="nopar" >
+</div>
+<!--l. 165--><p class="noindent" >This statement is a simple result that can be derived from the chain rule of entropy and the fact that
+conditioning can only descrease entropy. Equality in <a 
+href="#x1-6002r4">4<!--tex4ht:ref: bsaeq --></a> holds iff <span 
+class="cmmi-10x-x-109">X</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-109">&#x22A5; </span><span 
+class="cmmi-10x-x-109">X</span><sub><span 
+class="cmmi-8">j</span></sub>, <span 
+class="cmsy-10x-x-109">&#x2200;</span><span 
+class="cmmi-10x-x-109">i,j </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmr-10x-x-109">[</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmr-10x-x-109">]</span>. This statement hints at
+a connection between a <span 
+class="ptmb8t-x-x-109">global </span>quantity (<span 
+class="ptmri8t-x-x-109">Joint Entropy</span>) and a <span 
+class="ptmb8t-x-x-109">local </span>quantity (<span 
+class="ptmri8t-x-x-109">projected entropies</span>).
+<br 
+class="newline" /><br 
+class="newline" />We now state Han&#8217;s Inequality (<a 
+href="#x1-7001r5">5<!--tex4ht:ref: thm:hansineq --></a>), which is a slight generalization of the statement above and is the key ingredient
+in the special case of a version of Shearer&#8217;s Lemma (<a 
+href="#x1-8002r7">7<!--tex4ht:ref: thm:shearer --></a>).
+<span class="likeparagraphHead"><a 
+ id="x1-70002"></a>Han&#347; Inequality</span>
+Han&#8217;s inequality allows us to control the joint entropy of a system via the marginal entropies:
+<table 
+class="equation"><tr><td><a 
+ id="x1-7001r5"></a>
+                                                                                         
+                                                                                         
+<center class="math-display" >
+<img 
+src="cs229r_report12x.png" alt="                 1   &#x2211;n
+H (X1,..,Xn) &#x2264; -----    H (X1,..,Xi -1,Xi+1,..,Xn )
+               n - 1 i=1
+" class="math-display" ></center></td><td class="equation-label">(5)</td></tr></table>
+<!--l. 193--><p class="nopar" >
+     <ul class="itemize1">
+     <li class="itemize">Han&#8217;s inequality can be proved by rewriting the joint entropy as a conditional sum of entropies (for
+     some <span 
+class="cmmi-10x-x-109">i </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmr-10x-x-109">[</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmr-10x-x-109">]</span>), dropping conditioning on all coordinates <span 
+class="cmmi-10x-x-109">&#x003E; i</span>, repeating this <span 
+class="cmsy-10x-x-109">&#x2200;</span><span 
+class="cmmi-10x-x-109">i</span>, and then summing up
+     the terms and applying the chain-rule for entropy.
+     </li>
+     <li class="itemize">In the spirit of generalizing further, Han&#8217;s inequality can be applied to relative entropies as well. Given a finite
+     alphabet <span 
+class="cmsy-10x-x-109"><img 
+src="cmsy10-58.png" alt="X" class="10-109x-x-58" /> </span>, a product distribution <span 
+class="cmmi-10x-x-109">P </span><span 
+class="cmr-10x-x-109">=</span> <span 
+class="cmex-10x-x-109">&#x220F;</span>
+  <sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-10x-x-109">p</span><sub>
+<span 
+class="cmmi-8">i</span></sub> on <span 
+class="cmsy-10x-x-109"><img 
+src="cmsy10-58.png" alt="X" class="10-109x-x-58" /></span><sup><span 
+class="cmmi-8">n</span></sup>, and a joint distribution <span 
+class="cmmi-10x-x-109">Q </span>on <span 
+class="cmsy-10x-x-109"><img 
+src="cmsy10-58.png" alt="X" class="10-109x-x-58" /></span><sup><span 
+class="cmmi-8">n</span></sup>, it holds
+     that:
+     <table 
+class="equation"><tr><td><a 
+ id="x1-7002r6"></a>
+     <center class="math-display" >
+     <img 
+src="cs229r_report13x.png" alt="                   n
+D   (Q&#x2225;P ) &#x2265; --1--&#x2211;   D   (Q (i)&#x2225;P (i))
+ KL          n - 1     KL
+                   i=1
+     " class="math-display" ></center></td><td class="equation-label">(6)</td></tr></table>
+     <!--l. 199--><p class="nopar" >
+     where <span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">)</span></sup><span 
+class="cmmi-10x-x-109">,Q</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">)</span></sup> denote the marginal distributions for <span 
+class="cmmi-10x-x-109">P,Q </span>respectively.
+     </li></ul>
+<span class="likeparagraphHead"><a 
+ id="x1-80002"></a>Shearer&#8217;s Lemma &amp; Han&#8217;s Inequality</span>
+<span 
+class="ptmri8t-x-x-109">Shearer&#8217;s Lemma </span>is a statement that allows us to bound the volume of a discrete high-dimensional object by looking
+at its low-dimensional projections. <br 
+class="newline" />
+<div class="newtheorem">
+<!--l. 206--><p class="noindent" ><span class="head">
+                                                                                         
+                                                                                         
+<a 
+ id="x1-8001r3"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 3 </span>(<span 
+class="ptmb8t-x-x-109">Shearer&#8217;s Lemma</span>)<span 
+class="ptmb8t-x-x-109">.</span>  </span><span 
+class="ptmri8t-x-x-109">Given some </span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="ptmri8t-x-x-109">, </span><span 
+class="cmmi-10x-x-109">k</span><span 
+class="ptmri8t-x-x-109">, </span><span 
+class="cmmi-10x-x-109">N </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="msbm-10x-x-109">&#x2124;</span><sup><span 
+class="cmr-8">+</span></sup> <span 
+class="ptmri8t-x-x-109">where </span><span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmsy-10x-x-109">&#x2264; </span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="ptmri8t-x-x-109">, an object </span><span 
+class="cmmi-10x-x-109">F </span><span 
+class="cmr-10x-x-109">= (</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,..,f</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmr-10x-x-109">) </span><span 
+class="cmsy-10x-x-109">&#x2286; </span><span 
+class="cmr-10x-x-109">[</span><span 
+class="cmmi-10x-x-109">N</span><span 
+class="cmr-10x-x-109">]</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="ptmri8t-x-x-109">,</span>
+<span 
+class="ptmri8t-x-x-109">and the </span><span 
+class="cmmi-10x-x-109">k</span><span 
+class="ptmri8t-x-x-109">-dimensional projections </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">S</span></sub> <span 
+class="cmr-10x-x-109">= </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span><sub><span 
+class="cmr-6">1</span></sub></sub><span 
+class="cmmi-10x-x-109">,..,f</span><sub><span 
+class="cmmi-8">i</span><sub><span 
+class="cmmi-6">k</span></sub></sub><span 
+class="cmr-10x-x-109">) </span><span 
+class="cmsy-10x-x-109">| </span><span 
+class="cmmi-10x-x-109">i</span><sub><span 
+class="cmmi-8">j</span></sub> <span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">S</span><span 
+class="ptmri8t-x-x-109">, </span><span 
+class="cmmi-10x-x-109">S </span><span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="cmr-10x-x-109">[</span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmr-10x-x-109">]</span><span 
+class="cmsy-10x-x-109">}</span><span 
+class="ptmri8t-x-x-109">, the following inequality</span>
+<span 
+class="ptmri8t-x-x-109">holds:</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-8002r7"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report14x.png" alt="   (nk--11)      &#x220F;
+|F|     &#x2264;          |FS|
+          S&#x2282;[n],|S|=k
+" class="math-display" ></center></td><td class="equation-label">(7)</td></tr></table>
+<!--l. 210--><p class="nopar" >
+</div>
+<!--l. 213--><p class="noindent" >If we reformulate Shearer&#8217;s Lemma by replacing the volume terms <span 
+class="cmsy-10x-x-109">|&#x22C5;| </span>in&#x00A0;<a 
+href="#x1-8002r7">7<!--tex4ht:ref: thm:shearer --></a> by their entropic counterparts, then we
+recover Han&#8217;s Inequality&#x00A0;<a 
+href="#x1-7001r5">5<!--tex4ht:ref: thm:hansineq --></a> when <span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">1</span>, and Basic Subadditivity of Entropy <a 
+href="#x1-6002r4">4<!--tex4ht:ref: bsaeq --></a> when <span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmr-10x-x-109">= 1</span>. This hints at a
+connection between subadditivity of entropy and problems in geometry that involve estimating high-dimensional
+volumes by looking at low-dimensional projections. Since the statement of the <span 
+class="ptmri8t-x-x-109">Brascamp-Lieb inequality </span>(<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a>)
+can be inuitively interpreted as trying to bound the volume of a high-dimensional continuous object
+via its low-dimensional projections, it is natural to question whether subadditivity of entropy (in its
+general form) is related to <a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a>. A general form of subadditivity of entropy, which subsumes <a 
+href="#x1-6002r4">4<!--tex4ht:ref: bsaeq --></a>, <a 
+href="#x1-7001r5">5<!--tex4ht:ref: thm:hansineq --></a> and <a 
+href="#x1-7002r6">6<!--tex4ht:ref: thm:hansineqre --></a> is:
+<br 
+class="newline" />
+<div class="newtheorem">
+<!--l. 216--><p class="noindent" ><span class="head">
+<a 
+ id="x1-8003r4"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 4 </span>(<span 
+class="ptmb8t-x-x-109">Subadditivity of Entropy</span>, <span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>)<span 
+class="ptmb8t-x-x-109">.</span>  </span><span 
+class="ptmri8t-x-x-109">Given   independent   random   variables   </span><span 
+class="cmmi-10x-x-109">X</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,..,X</span><sub><span 
+class="cmmi-8">n</span></sub>  <span 
+class="ptmri8t-x-x-109">taking</span>
+<span 
+class="ptmri8t-x-x-109">values in a countable set </span><span 
+class="cmsy-10x-x-109"><img 
+src="cmsy10-58.png" alt="X" class="10-109x-x-58" /> </span><span 
+class="ptmri8t-x-x-109">with the product distribution:</span>
+<center class="math-display" >
+                                                                                         
+                                                                                         
+<img 
+src="cs229r_report15x.png" alt="    &#x220F;n
+P =    pi
+    i=1  " class="math-display" ></center> <span 
+class="ptmri8t-x-x-109">and</span>
+<span 
+class="cmmi-10x-x-109">Z </span><span 
+class="cmr-10x-x-109">= </span><span 
+class="cmmi-10x-x-109">f </span><span 
+class="cmr-10x-x-109">: </span><span 
+class="cmsy-10x-x-109"><img 
+src="cmsy10-58.png" alt="X" class="10-109x-x-58" /></span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmr-10x-x-109">[0</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmsy-10x-x-109">&#x221E;</span><span 
+class="cmr-10x-x-109">) </span><span 
+class="ptmri8t-x-x-109">a positive, bounded random variable, the following inequality holds:</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-8004r8"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report16x.png" alt="                            1                                (i)
+             n              Ent [Z]isageneralizationofentropy and Ent [Z(i])isamarg(ii)nalofthegener(ali)ization. We(id)efine Ent[Z ]=E [Z log(Z)]-
+Ent[Z ] &#x2264; E [&#x2211;   Ent(i)[Z]]1E [Z]log(E[Z]),andthecorresponding marginal: Ent [Z]= E  [Z log(Z)]- E [Z]log(E  [Z]).Referto [?]fora complete
+          P
+            i=1
+" class="math-display" ></center></td><td class="equation-label">(8)</td></tr></table>
+<!--l. 224--><p class="nopar" >
+</div>
+<!--l. 226--><p class="noindent" >This equation has a similar skeletal structure to <a 
+href="#x1-6002r4">4<!--tex4ht:ref: bsaeq --></a>, and basically asserts that the joint entropy of the system is
+bounded from above by the average of the sum of the marginal entropies. The generalized <span 
+class="cmmi-10x-x-109">Ent</span><span 
+class="cmr-10x-x-109">[</span><span 
+class="cmmi-10x-x-109">Z</span><span 
+class="cmr-10x-x-109">] </span>term allows
+us to control higher moments, forming the basis of the <span 
+class="ptmri8t-x-x-109">Entropy Method </span>for proving concentration
+inequalities.<span class="footnote-mark"><a 
+href="cs229r_report2.html#fn2x0"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x1-8005f2"></a> 
+<a 
+ id="x1-8006r6"></a>
+<h3 class="sectionHead"><span class="titlemark">3    </span> <a 
+ id="x1-90003"></a>Duality of subadditivity of entropy and Brascamp-Lieb Inequality</h3>
+<!--l. 228--><p class="noindent" >While there are several proofs of Theorem&#x00A0;<a 
+href="#x1-1001r1">1<!--tex4ht:ref: thm:general-bl --></a>, the first of which was due to Bennett et al.&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>, we now outline an
+alternative approach due to Carlen and Cordero-Erausquin&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>. Among other things, they show that Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> is
+dual (in a precise sense to be explained below) to a continuous version of <a 
+href="#x1-8004r8">8<!--tex4ht:ref: thm:sae --></a> (see <a 
+href="#x1-10007r9">9<!--tex4ht:ref: eqn:sub-add-ent --></a>). This exactly quantifies and
+generalizes the connection we briefly saw in Section <a 
+href="#x1-80002">2<!--tex4ht:ref: section:his --></a>.
+<a 
+ id="x1-9001r5"></a>
+<h4 class="subsectionHead"><span class="titlemark">3.1    </span> <a 
+ id="x1-100001"></a>Statement of the main result</h4>
+<!--l. 231--><p class="noindent" >We now give one of the main results of Carlen and Cordero-Erausquin, which establishes a duality between the BL
+inequality and subadditivity of entropy. For a probability density function <span 
+class="cmmi-10x-x-109">f </span><span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> with <span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">dx </span><span 
+class="cmr-10x-x-109">= 1</span>,
+we can define the entropy as
+                                                                                         
+                                                                                         
+<center class="math-display" >
+<img 
+src="cs229r_report17x.png" alt="       &#x222B;
+
+S(f) =  x&#x2208;&#x211D;n f(x)logf(x)dx.
+" class="math-display" ></center>
+<!--l. 234--><p class="nopar" > In fact, this is actually the <span 
+class="ptmri8t-x-x-109">negative </span>entropy, but it will be simpler to work with this version. So, as we
+will see, "subadditivity" of this definition of entropy really means superadditivity. For a projection
+<span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup>, we use <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">B</span><sub>
+<span 
+class="cmmi-6">i</span></sub></sub> to denote the marginal probability density function of <span 
+class="cmmi-10x-x-109">f </span>under the projection
+<span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span class="footnote-mark"><a 
+href="cs229r_report3.html#fn3x0"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x1-10001f3"></a> .
+With these definitions, we can state the main result.
+<div class="newtheorem">
+<!--l. 237--><p class="noindent" ><span class="head">
+<a 
+ id="x1-10002r5"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 5 </span>(Theorem 2.1 of&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>)<span 
+class="ptmb8t-x-x-109">.</span>  </span> <span 
+class="ptmri8t-x-x-109">Let </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">and </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">be as in Theorem</span><span 
+class="ptmri8t-x-x-109">&#x00A0;</span><a 
+href="#x1-1001r1"><span 
+class="ptmri8t-x-x-109">1</span><!--tex4ht:ref: thm:general-bl --></a><span 
+class="ptmri8t-x-x-109">. Then the following statements</span>
+<span 
+class="ptmri8t-x-x-109">are equivalent:</span>
+     <ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-10004x1"><span 
+class="ptmri8t-x-x-109">(BL inequality) For any collection </span><span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup> <span 
+class="ptmri8t-x-x-109">of non-negative functions </span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup>  <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> <span 
+class="ptmri8t-x-x-109">such that</span>
+     <span 
+class="cmex-10x-x-109">&#x222B;</span>
+       <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span><sub><span 
+class="cmmi-6">i</span></sub></sup></sub><span 
+class="cmsy-10x-x-109">|</span><span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmsy-10x-x-109">|</span><span 
+class="cmmi-10x-x-109">dx &#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span><span 
+class="ptmri8t-x-x-109">, Inequality</span><span 
+class="ptmri8t-x-x-109">&#x00A0;</span><a 
+href="#x1-1003r2"><span 
+class="ptmri8t-x-x-109">2</span><!--tex4ht:ref: eqn:bli --></a> <span 
+class="ptmri8t-x-x-109">holds.</span>
+     </li>
+     <li 
+  class="enumerate" id="x1-10006x2"><span 
+class="ptmri8t-x-x-109">(Subadditivity of entropy) For any probability density function </span><span 
+class="cmmi-10x-x-109">f </span><span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sub><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">0</span></sub> <span 
+class="ptmri8t-x-x-109">with</span> <span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">dx </span><span 
+class="cmr-10x-x-109">= 1 </span><span 
+class="ptmri8t-x-x-109">and</span>
+     <span 
+class="cmmi-10x-x-109">S</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">) </span><span 
+class="cmmi-10x-x-109">&#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span><span 
+class="ptmri8t-x-x-109">, the following inequality holds:</span>
+     <table 
+class="equation"><tr><td><a 
+ id="x1-10007r9"></a>
+     <center class="math-display" >
+     <img 
+src="cs229r_report18x.png" alt=" m
+&#x2211;  c S(f  ) &#x2264; S (f)+ logD.
+    i   Bi
+i=1
+     " class="math-display" ></center></td><td class="equation-label">(9)</td></tr></table>
+     <!--l. 244--><p class="nopar" >
+     </li></ol>
+</div>
+                                                                                         
+                                                                                         
+<!--l. 247--><p class="noindent" >Having stated Theorem&#x00A0;<a 
+href="#x1-10002r5">5<!--tex4ht:ref: thm:duality --></a>, we can see that both Inequalities&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> and&#x00A0;<a 
+href="#x1-10007r9">9<!--tex4ht:ref: eqn:sub-add-ent --></a> are statements that relate integrals of a
+function to integrals of its marginals. Moreover, note that Theorem&#x00A0;<a 
+href="#x1-10002r5">5<!--tex4ht:ref: thm:duality --></a> preserves the constant <span 
+class="cmmi-10x-x-109">D </span>when moving
+between&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> and <a 
+href="#x1-10007r9">9<!--tex4ht:ref: eqn:sub-add-ent --></a>. Carlen and Cordero-Erausquin&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span> exploit this fact to characterize the functions which make the
+BL inequality tight.
+<a 
+ id="x1-10008r10"></a>
+<h4 class="subsectionHead"><span class="titlemark">3.2    </span> <a 
+ id="x1-110002"></a>Dual relationship</h4>
+<!--l. 256--><p class="noindent" >We can connect entropy and the BL inequality through the following formula from&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>.
+<div class="newtheorem">
+<!--l. 258--><p class="noindent" ><span class="head">
+<a 
+ id="x1-11001r6"></a>
+<span 
+class="ptmb8t-x-x-109">Theorem 6.</span>  </span><span 
+class="ptmri8t-x-x-109">Let </span><span 
+class="cmmi-10x-x-109">f </span><span 
+class="ptmri8t-x-x-109">be a probability density function on </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="ptmri8t-x-x-109">and </span><span 
+class="cmmi-10x-x-109">&#x03D5; </span><span 
+class="cmr-10x-x-109">: </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="msbm-10x-x-109">&#x211D; </span><span 
+class="ptmri8t-x-x-109">be any function such that</span>
+<span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-10x-x-109">e</span><sup><span 
+class="cmmi-8">&#x03D5;</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">x</span><span 
+class="cmr-8">)</span></sup><span 
+class="cmmi-10x-x-109">dx &#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span><span 
+class="ptmri8t-x-x-109">. Then, the following holds:</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-11002r10"></a>
+<center class="math-display" >
+<img 
+src="cs229r_report19x.png" alt="   (&#x222B;            )
+log        e&#x03D5;(x)dx   &#x2265; &#x27E8;f,&#x03D5;&#x27E9;- S (f).
+      x&#x2208; &#x211D;n
+" class="math-display" ></center></td><td class="equation-label">(10)</td></tr></table>
+<!--l. 262--><p class="nopar" >
+</div>
+<!--l. 264--><p class="noindent" >The quantity on the left-hand side of Inequality&#x00A0;<a 
+href="#x1-11002r10">10<!--tex4ht:ref: eqn:formula --></a> is known in other contexts as the logarithm of the moment
+generating function (or the cumulant generating function) of <span 
+class="cmmi-10x-x-109">&#x03D5;</span>. Inequality&#x00A0;<a 
+href="#x1-11002r10">10<!--tex4ht:ref: eqn:formula --></a> simply says that the
+dual<span class="footnote-mark"><a 
+href="cs229r_report4.html#fn4x0"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x1-11003f4"></a>  of
+entropy <span 
+class="cmmi-10x-x-109">S</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">) </span>is the logarithm of the moment generating function.
+<!--l. 266--><p class="noindent" >
+<div class="proof">
+<!--l. 267--><p class="noindent" ><span class="head">
+                                                                                         
+                                                                                         
+<span 
+class="ptmri8t-x-x-109">Proof.</span> </span>Our  starting  point  is  the  relative  entropy  between  <span 
+class="cmmi-10x-x-109">&#x03D5; </span>and  <span 
+class="cmmi-10x-x-109">f</span>,  which  can  be  simplified  to  get  the
+right-hand side of the inequality we want to prove:
+<center class="math-display" >
+<img 
+src="cs229r_report20x.png" alt="             (      )
+&#x222B;              e&#x03D5;(x)
+    n f(x)log  f(x)-  dx = &#x27E8;f,&#x03D5; &#x27E9;- S(f ),
+ x&#x2208;&#x211D;
+" class="math-display" ></center>
+<!--l. 270--><p class="nopar" > where we have used the inner product <span 
+class="cmsy-10x-x-109">&#x27E8;</span><span 
+class="cmmi-10x-x-109">f,&#x03D5;</span><span 
+class="cmsy-10x-x-109">&#x27E9; </span><span 
+class="cmr-10x-x-109">=</span> <span 
+class="cmex-10x-x-109">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">x</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="msbm-10x-x-80">&#x211D;</span><sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">g</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmr-10x-x-109">)</span><span 
+class="cmmi-10x-x-109">dx</span>. By the concavity of the logarithm and
+Jensen&#8217;s inequality, we can upper bound the relative entropy as:
+<center class="math-display" >
+<img 
+src="cs229r_report21x.png" alt="&#x222B;            ( e&#x03D5;(x))         ( &#x222B;         e&#x03D5;(x)   )      ( &#x222B;           )
+     f (x)log   ----- dx &#x2264; log        f(x)----dx   = log       e&#x03D5;(x)dx   .
+ x&#x2208;&#x211D;n          f(x)             x&#x2208;&#x211D;n     f(x)             x&#x2208;&#x211D;n
+" class="math-display" ></center>
+<!--l. 274--><p class="nopar" > Combining the previous inequality with the original equality gives the result.                                             __
+</div>
+<a 
+ id="x1-11004r11"></a>
+<h4 class="subsectionHead"><span class="titlemark">3.3    </span> <a 
+ id="x1-120003"></a>Proof of Theorem&#x00A0;5</h4>
+<!--l. 279--><p class="noindent" >The proof strategy for Theorem&#x00A0;<a 
+href="#x1-10002r5">5<!--tex4ht:ref: thm:duality --></a> is simple. We will associate the BL inequality with the left-hand side of
+Formula&#x00A0;<a 
+href="#x1-11002r10">10<!--tex4ht:ref: eqn:formula --></a> and Inequality&#x00A0;<a 
+href="#x1-10007r9">9<!--tex4ht:ref: eqn:sub-add-ent --></a> with the right-hand side, allowing us to pass back and forth between
+two.
+<!--l. 281--><p class="noindent" >
+<div class="proof">
+<!--l. 282--><p class="noindent" ><span class="head">
+<span 
+class="ptmri8t-x-x-109">Proof.</span> </span>For the first direction, assume that Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> holds and let <span 
+class="cmmi-10x-x-109">f </span>be any probability density function on
+<span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> with <span 
+class="cmmi-10x-x-109">S</span><span 
+class="cmr-10x-x-109">(</span><span 
+class="cmmi-10x-x-109">f</span><span 
+class="cmr-10x-x-109">) </span><span 
+class="cmmi-10x-x-109">&#x003C; </span><span 
+class="cmsy-10x-x-109">&#x221E;</span>. Instantiating the duality formula&#x00A0;<a 
+href="#x1-11002r10">10<!--tex4ht:ref: eqn:formula --></a> with <span 
+class="cmmi-10x-x-109">&#x03D5; </span><span 
+class="cmr-10x-x-109">=</span> <span 
+class="cmex-10x-x-109">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">m</span></sup><span 
+class="cmmi-10x-x-109">c</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmr-10x-x-109">log</span> <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">B</span><sub><span 
+class="cmmi-6">i</span></sub></sub> <span 
+class="cmsy-10x-x-109">&#x2218;</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub> and rearranging,
+we have that:
+<center class="math-display" >
+<img 
+src="cs229r_report22x.png" alt="            ( &#x222B;                      )       (&#x222B;                 )
+       &#x2211;m                                           &#x220F;m         ci
+S (f ) &#x2265;    ci   x&#x2208;&#x211D;ni fBi(x)logfBi(x)dx -  log   x&#x2208;&#x211D;n    fBi(Bix)   .
+       i=1                                          i=1
+" class="math-display" ></center>
+<!--l. 285--><p class="nopar" > On the right-hand side of the above inequality, we apply the BL inequality to control the integral of products
+so that we get
+<center class="math-display" >
+<img 
+src="cs229r_report23x.png" alt="&#x222B;     m                m  (&#x222B;             )c
+     &#x220F;          ci     &#x220F;                    i
+ x&#x2208;&#x211D;n   fBi(Bix)  &#x2264; D       x&#x2208;&#x211D;ni fBi(x)dx   = D,
+     i=1               i=1
+" class="math-display" ></center>
+<!--l. 289--><p class="nopar" > where we used the fact that each <span 
+class="cmmi-10x-x-109">f</span><sub><span 
+class="cmmi-8">B</span><sub><span 
+class="cmmi-6">i</span></sub></sub> is a density function which integrates to 1. Substituting this into the
+above inequality, we have:
+<center class="math-display" >
+<img 
+src="cs229r_report24x.png" alt="            (&#x222B;                       )
+       m&#x2211;                                         m&#x2211;
+S(f) &#x2265;    ci      ni fBi(x )log fBi(x)dx - logD =     ciS (fBi)- logD,
+       i=1      x&#x2208;&#x211D;                               i=1
+" class="math-display" ></center>
+<!--l. 293--><p class="nopar" > completing the first direction of the proof. The reverse direction is similar, so we omit the details.            __
+</div>
+<!--l. 297--><p class="noindent" >The proof illustrates that the logarithm of the moment generating function makes it easier to work with marginals,
+since the exponential of a sum factors into a product of exponentials.
+<a 
+ id="x1-12001r9"></a>
+<h3 class="sectionHead"><span class="titlemark">4    </span> <a 
+ id="x1-130004"></a>Conclusion</h3>
+<!--l. 300--><p class="noindent" >In this report, we saw that the BL inequality is a general tool for bounding integrals of products of functions by
+products of integrals, which arise in various applications.
+<!--l. 302--><p class="noindent" >The main takeaway of Theorem&#x00A0;<a 
+href="#x1-10002r5">5<!--tex4ht:ref: thm:duality --></a> is that we can now prove BL-type inequalities by making use of tools from
+information theory to prove the corresponding subadditivity of entropy inequalities. In some cases,
+the latter task is significantly easier (as demonstrated by Carlen and Cordero-Erausquin&#x00A0;<span class="cite">[<span 
+class="ptmb8t-x-x-109">?</span>]</span>). As a
+simple example of this, instantiate Theorem&#x00A0;<a 
+href="#x1-10002r5">5<!--tex4ht:ref: thm:duality --></a> with <span 
+class="cmsy-10x-x-109">{</span><span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-109">}</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">n</span></sup> as the projections onto the <span 
+class="cmmi-10x-x-109">n </span>coordinate
+hyperplanes. Then Inequality&#x00A0;<a 
+href="#x1-10007r9">9<!--tex4ht:ref: eqn:sub-add-ent --></a> becomes Han&#8217;s Inequality&#x00A0;<a 
+href="#x1-7001r5">5<!--tex4ht:ref: thm:hansineq --></a> and Inequality&#x00A0;<a 
+href="#x1-1003r2">2<!--tex4ht:ref: eqn:bli --></a> becomes the Loomis-Whitney
+Inequality.
+<a 
+ id="Q1-1-14"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-140004"></a>Acknowledgements</h3>
+<!--l. 306--><p class="noindent" >The authors would like to thank Professor Madhu Sudan for his feedback on this report and corresponding
+presentation.
+ 
+</body></html> 
+
+                                                                                         
+                                                                                         
+                                                                                         
+
+
